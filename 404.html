@@ -1023,6 +1023,239 @@ h2 {
   display: block;
 }
 
+.registration-card {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.18fr);
+  max-width: 940px;
+  margin-inline: auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--ink-card);
+  scroll-margin-top: 112px;
+}
+
+.registration-copy {
+  position: relative;
+  padding: 52px 38px;
+  overflow: hidden;
+  border-right: 1px solid var(--line);
+  background:
+    linear-gradient(145deg, rgba(241, 63, 12, 0.16), transparent 62%),
+    #100e0c;
+}
+
+.registration-copy::after {
+  position: absolute;
+  right: -130px;
+  bottom: -130px;
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(215, 167, 57, 0.25);
+  border-radius: 50%;
+  content: "";
+}
+
+.registration-copy .eyebrow {
+  position: relative;
+  z-index: 2;
+  justify-content: flex-start;
+}
+
+.registration-copy h2 {
+  position: relative;
+  z-index: 2;
+  margin: 20px 0 14px;
+  font-size: clamp(45px, 5vw, 64px);
+  line-height: 1.1;
+}
+
+.registration-copy > p:not(.eyebrow) {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 32px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.registration-copy ul {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.registration-copy li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 11px;
+  color: #e0d8cc;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.registration-copy li b {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid var(--gold);
+  color: var(--gold-pale);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.registration-form {
+  position: relative;
+  padding: 48px 42px 42px;
+  background: #f3eadb;
+  color: #17130e;
+}
+
+.form-field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-field label,
+.form-field legend {
+  color: #211a12;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.form-field label em,
+.form-field legend em {
+  margin-left: 5px;
+  color: #d3330a;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.form-field label > span,
+.form-field legend > span {
+  margin-left: 5px;
+  color: #81766a;
+  font-size: 9px;
+}
+
+.form-field > input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 14px;
+  border: 1px solid #b7aa99;
+  border-radius: 0;
+  color: #17130e;
+  background: #fffdf8;
+  font: inherit;
+  font-size: 16px;
+}
+
+.form-field > input:focus,
+.form-choice-grid input:focus-visible + span,
+.consent-field input:focus-visible {
+  outline: 3px solid rgba(215, 167, 57, 0.5);
+  outline-offset: 2px;
+}
+
+.form-field > small {
+  color: #6f655a;
+  font-size: 11px;
+}
+
+.menu-choice-field {
+  padding: 0;
+  border: 0;
+}
+
+.form-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.form-choice-grid label {
+  cursor: pointer;
+}
+
+.form-choice-grid input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.form-choice-grid span {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border: 1px solid #b7aa99;
+  color: #40372d;
+  background: #fffdf8;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+}
+
+.form-choice-grid input:checked + span {
+  border-color: #d83b10;
+  color: #fffaf0;
+  background: #d83b10;
+}
+
+.form-trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.consent-field {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: start;
+  gap: 9px;
+  margin: 4px 0 22px;
+  color: #544a3f;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.consent-field input {
+  width: 18px;
+  height: 18px;
+  margin: 1px 0 0;
+  accent-color: #d83b10;
+}
+
+.registration-submit {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+
+.registration-submit:disabled {
+  cursor: not-allowed;
+  filter: grayscale(1);
+  opacity: 0.62;
+}
+
+.registration-note {
+  margin: 11px 0 0;
+  color: #6f655a;
+  font-size: 10px;
+  line-height: 1.7;
+  text-align: center;
+}
+
 .overview-list dd strong {
   color: var(--white);
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -1231,6 +1464,15 @@ a:focus-visible {
     aspect-ratio: auto;
     border-right: 1px solid var(--line);
     border-bottom: 0;
+  }
+
+  .registration-card {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-copy {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
   }
 }
 
@@ -1603,6 +1845,30 @@ a:focus-visible {
     padding: 50px 18px 58px;
   }
 
+  .registration-card {
+    scroll-margin-top: 86px;
+  }
+
+  .registration-copy {
+    padding: 40px 22px 34px;
+  }
+
+  .registration-copy h2 {
+    font-size: 43px;
+  }
+
+  .registration-copy > p:not(.eyebrow) {
+    margin-bottom: 24px;
+  }
+
+  .registration-form {
+    padding: 32px 18px 28px;
+  }
+
+  .form-choice-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .final-cta > p {
     font-size: 10px;
     line-height: 1.7;
@@ -1676,5 +1942,5 @@ a:focus-visible {
 }
 </style>
 </head>
-<body><div class="urgent-bar"><div class="shell urgent-inner"><strong>緊急開催</strong><span>8.17 MON</span><span>15:00</span><span>ONLINE</span><span>参加費0円</span></div></div><header class="site-header"><div class="shell header-inner"><a class="brand" href="#top" aria-label="アシュラ実践体験会 トップへ"><span class="brand-mark" aria-hidden="true">{ }</span><span>アシュラ</span><small>最新AI実践体験会</small></a><nav aria-label="ページ内メニュー"><a href="#menu">4つのメニュー</a><a href="#experience">体験内容</a><a href="#hosts">主催者</a><a href="#overview">開催概要</a></nav><a class="header-cta" href="https://ougi-shokudo.vercel.app/" target="_blank" rel="noopener noreferrer">奥義食堂を見る<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></header><main id="top"><section class="hero" aria-labelledby="hero-title"><div class="hero-glow" aria-hidden="true"></div><div class="shell hero-grid"><div class="hero-copy"><p class="hero-kicker">ASHURA <span>BUSINESS CREATION SESSION</span></p><h1 id="hero-title"><span>最新AIで、</span><em>商売に使う一品を。</em></h1><p class="hero-lead">LP・漫画・Instagram・スライドから1つ選ぶ。<br/>自分の商品・サービスを、その場で形にする実践体験会。</p><a class="button button-primary" href="https://ougi-shokudo.vercel.app/" target="_blank" rel="noopener noreferrer">奥義食堂を見てみる<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><div class="hero-facts" aria-label="開催情報"><div><small>DATE</small><strong>2026.8.17 <span>MON</span></strong></div><div><small>TIME</small><strong>15:00〜</strong></div><div><small>PLACE</small><strong>ONLINE</strong></div><div><small>FEE</small><strong>0 YEN</strong></div></div></div><div class="hero-hosts" aria-label="主催者3名"><div class="hero-sun" aria-hidden="true"></div><figure class="hero-host hero-host-main"><img src="./hirokun.webp" alt="田中啓之（ひろくん）"/><figcaption>田中 啓之<small>ひろくん</small></figcaption></figure><figure class="hero-host hero-host-top"><img src="./takasakisan.webp" alt="髙崎翔太（高崎さん）"/><figcaption>髙崎 翔太<small>高崎さん</small></figcaption></figure><figure class="hero-host hero-host-bottom"><img src="./takumikun.webp" alt="山﨑琢己（たくみくん）"/><figcaption>山﨑 琢己<small>たくみくん</small></figcaption></figure></div></div></section><section id="menu" class="menu-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>01</span> CHOOSE ONE</p><h2>4つから、1つ選ぶ。</h2><p>練習用の課題ではなく、自分の商品・サービスを題材に進めます。</p></div><div class="menu-grid"><article class="menu-card"><div class="menu-meta"><span>LANDING PAGE</span><b>01</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="7" width="32" height="34" rx="3"></rect><path d="M14 15h20M14 22h13M14 29h20"></path><rect x="14" y="34" width="12" height="3" rx="1"></rect></svg></div><h3>LP御膳</h3><p>商品・サービスの魅力を、申込や購入へつなぐ販売ページに。</p></article><article class="menu-card"><div class="menu-meta"><span>BUSINESS MANGA</span><b>02</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="7" width="36" height="34" rx="3"></rect><path d="M24 7v34M6 24h36M14 15h4M31 31h4"></path></svg></div><h3>漫画セット</h3><p>難しい価値や商品の物語を、続きを読みたくなるビジネス漫画に。</p></article><article class="menu-card"><div class="menu-meta"><span>INSTAGRAM</span><b>03</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="8"></rect><circle cx="24" cy="24" r="8"></circle><circle cx="34" cy="14" r="1.5" class="fill"></circle></svg></div><h3>インスタ小鉢</h3><p>告知や集客に使う内容を、目を止めてもらえる投稿画像に。</p></article><article class="menu-card"><div class="menu-meta"><span>PRESENTATION</span><b>04</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="26" rx="3"></rect><path d="M24 34v8M16 42h16M13 27l7-7 5 4 9-10"></path></svg></div><h3>スライド定食</h3><p>提案・説明・講座の内容を、相手に伝わるスライド資料に。</p></article></div><p class="choice-note">当日は、このうち1つを選んで進めます。</p></div></section><section id="experience" class="experience-section"><div class="shell experience-shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>02</span> THE CREATION SCREEN</p><h2>参加者自身が、<br/><em>奥義食堂を操作。</em></h2><p>画面に並ぶ札からつくるものを選び、自分の商売の材料を入れて制作します。</p></div><div class="screen-stage"><div class="screen-label"><span>LIVE SCREEN</span> 実際に使う画面</div><div class="browser-frame"><div class="browser-chrome"><i></i><i></i><i></i><span>ougi-shokudo.vercel.app</span></div><img src="./ougi-shokudo-screen.webp" alt="LP御膳、スライド定食、漫画セット、インスタ小鉢を選べる奥義食堂の実画面"/></div></div><div class="steps-grid" aria-label="体験の3ステップ"><article class="step-card"><div class="step-head"><b>1</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="16" height="28" rx="3"></rect><rect x="27" y="8" width="16" height="28" rx="3"></rect><path d="m15 26 5 5 9-12"></path></svg></div></div><h3>選ぶ</h3><p>LP・漫画・Instagram・スライドから、今の仕事に必要なものを1つ選びます。</p></article><article class="step-card"><div class="step-head"><b>2</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38h32V18H26l-5-6H8z"></path><path d="M24 35V23M19 28l5-5 5 5"></path></svg></div></div><h3>素材を入れる</h3><p>商品・サービス、届けたい相手、伝えたい価値など、自分の材料を入力します。</p></article><article class="step-card"><div class="step-head"><b>3</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m9 39 21-21M27 9l3-6 3 6 6 3-6 3-3 6-3-6-6-3zM32 30l2-4 2 4 4 2-4 2-2 4-2-4-4-2z"></path><path d="m7 41 7-2-5-5z"></path></svg></div></div><h3>生成する</h3><p>最新AIの制作工程を動かし、仕事で使うための一品へ整えていきます。</p></article></div><a class="button button-outline" href="https://ougi-shokudo.vercel.app/" target="_blank" rel="noopener noreferrer">実際の奥義食堂を見る<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></section><section id="hosts" class="hosts-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>03</span> HOSTS</p><h2>主催者</h2><p>ビジネスとAI制作の両面から、3人で体験を支えます。</p></div><div class="hosts-grid"><article class="host-card"><div class="host-photo"><img src="./hirokun.webp" alt="田中 啓之（ひろくん）"/></div><div class="host-body"><span>HIROYUKI TANAKA</span><h3>田中 啓之<small>（<!-- -->ひろくん<!-- -->）</small></h3><strong>三方よしAI共創コンサルタント／GPTs研究会創設者</strong><p>AI氣道、Claude Code、AIエージェントの実践会を主催。難しいAIを、商売の現場で使える形へ翻訳してきた。</p></div></article><article class="host-card"><div class="host-photo"><img src="./takasakisan.webp" alt="髙崎 翔太（高崎さん）"/></div><div class="host-body"><span>SHOTA TAKASAKI</span><h3>髙崎 翔太<small>（<!-- -->高崎さん<!-- -->）</small></h3><strong>if(塾)塾頭／起業家・AI開発実践者</strong><p>独自のワークフロービルダーを開発し、Claude Codeなどで実務ツールを構築。アシュラの開発・技術を担当。</p></div></article><article class="host-card"><div class="host-photo"><img src="./takumikun.webp" alt="山﨑 琢己（たくみくん）"/></div><div class="host-body"><span>TAKUMI YAMAZAKI</span><h3>山﨑 琢己<small>（<!-- -->たくみくん<!-- -->）</small></h3><strong>if(塾)塾長／NPO法人if(AI)理事</strong><p>AI API接続やダッシュボード構築、教育とAIの実践を担う。参加者の制作工程と操作を支える。</p></div></article></div></div></section><section id="overview" class="overview-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>04</span> EVENT INFO</p><h2>開催概要</h2></div><dl class="overview-list"><div><dt>開催日</dt><dd><strong>2026年8月17日</strong><span>月曜日</span></dd></div><div><dt>開始時間</dt><dd><strong>15:00〜</strong></dd></div><div><dt>開催形式</dt><dd><strong>オンライン</strong></dd></div><div><dt>参加費</dt><dd><strong>0円</strong></dd></div></dl><div class="final-cta"><p>LP・漫画・Instagram・スライドから1つ選んで制作</p><h2>この一品を、<br/>売上につなげる。</h2><a class="button button-primary button-final" href="https://ougi-shokudo.vercel.app/" target="_blank" rel="noopener noreferrer">奥義食堂を見てみる<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></section></main><footer class="site-footer"><div class="shell"><span>アシュラ｜最新AI実践体験会</span><small>2026.8.17 MON 15:00 ONLINE</small></div></footer><a class="mobile-cta" href="https://ougi-shokudo.vercel.app/" target="_blank" rel="noopener noreferrer">奥義食堂を見てみる<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></body>
+<body><div class="urgent-bar"><div class="shell urgent-inner"><strong>緊急開催</strong><span>8.17 MON</span><span>15:00</span><span>ONLINE</span><span>参加費0円</span></div></div><header class="site-header"><div class="shell header-inner"><a class="brand" href="#top" aria-label="アシュラ実践体験会 トップへ"><span class="brand-mark" aria-hidden="true">{ }</span><span>アシュラ</span><small>最新AI実践体験会</small></a><nav aria-label="ページ内メニュー"><a href="#menu">4つのメニュー</a><a href="#experience">体験内容</a><a href="#hosts">主催者</a><a href="#overview">開催概要</a></nav><a class="header-cta" href="#registration">0円で申し込む<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></header><main id="top"><section class="hero" aria-labelledby="hero-title"><div class="hero-glow" aria-hidden="true"></div><div class="shell hero-grid"><div class="hero-copy"><p class="hero-kicker">ASHURA <span>BUSINESS CREATION SESSION</span></p><h1 id="hero-title"><span>最新AIで、</span><em>商売に使う一品を。</em></h1><p class="hero-lead">LP・漫画・Instagram・スライドから1つ選ぶ。<br/>自分の商品・サービスを、その場で形にする実践体験会。</p><a class="button button-primary" href="#registration">0円で参加を申し込む<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><div class="hero-facts" aria-label="開催情報"><div><small>DATE</small><strong>2026.8.17 <span>MON</span></strong></div><div><small>TIME</small><strong>15:00〜</strong></div><div><small>PLACE</small><strong>ONLINE</strong></div><div><small>FEE</small><strong>0 YEN</strong></div></div></div><div class="hero-hosts" aria-label="主催者3名"><div class="hero-sun" aria-hidden="true"></div><figure class="hero-host hero-host-main"><img src="./hirokun.webp" alt="田中啓之（ひろくん）"/><figcaption>田中 啓之<small>ひろくん</small></figcaption></figure><figure class="hero-host hero-host-top"><img src="./takasakisan.webp" alt="髙崎翔太（高崎さん）"/><figcaption>髙崎 翔太<small>高崎さん</small></figcaption></figure><figure class="hero-host hero-host-bottom"><img src="./takumikun.webp" alt="山﨑琢己（たくみくん）"/><figcaption>山﨑 琢己<small>たくみくん</small></figcaption></figure></div></div></section><section id="menu" class="menu-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>01</span> CHOOSE ONE</p><h2>4つから、1つ選ぶ。</h2><p>練習用の課題ではなく、自分の商品・サービスを題材に進めます。</p></div><div class="menu-grid"><article class="menu-card"><div class="menu-meta"><span>LANDING PAGE</span><b>01</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="7" width="32" height="34" rx="3"></rect><path d="M14 15h20M14 22h13M14 29h20"></path><rect x="14" y="34" width="12" height="3" rx="1"></rect></svg></div><h3>LP御膳</h3><p>商品・サービスの魅力を、申込や購入へつなぐ販売ページに。</p></article><article class="menu-card"><div class="menu-meta"><span>BUSINESS MANGA</span><b>02</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="7" width="36" height="34" rx="3"></rect><path d="M24 7v34M6 24h36M14 15h4M31 31h4"></path></svg></div><h3>漫画セット</h3><p>難しい価値や商品の物語を、続きを読みたくなるビジネス漫画に。</p></article><article class="menu-card"><div class="menu-meta"><span>INSTAGRAM</span><b>03</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="8"></rect><circle cx="24" cy="24" r="8"></circle><circle cx="34" cy="14" r="1.5" class="fill"></circle></svg></div><h3>インスタ小鉢</h3><p>告知や集客に使う内容を、目を止めてもらえる投稿画像に。</p></article><article class="menu-card"><div class="menu-meta"><span>PRESENTATION</span><b>04</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="26" rx="3"></rect><path d="M24 34v8M16 42h16M13 27l7-7 5 4 9-10"></path></svg></div><h3>スライド定食</h3><p>提案・説明・講座の内容を、相手に伝わるスライド資料に。</p></article></div><p class="choice-note">当日は、このうち1つを選んで進めます。</p></div></section><section id="experience" class="experience-section"><div class="shell experience-shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>02</span> THE CREATION SCREEN</p><h2>参加者自身が、<br/><em>奥義食堂を操作。</em></h2><p>画面に並ぶ札からつくるものを選び、自分の商売の材料を入れて制作します。</p></div><div class="screen-stage"><div class="screen-label"><span>LIVE SCREEN</span> 実際に使う画面</div><div class="browser-frame"><div class="browser-chrome"><i></i><i></i><i></i><span>ougi-shokudo.vercel.app</span></div><img src="./ougi-shokudo-screen.webp" alt="LP御膳、スライド定食、漫画セット、インスタ小鉢を選べる奥義食堂の実画面"/></div></div><div class="steps-grid" aria-label="体験の3ステップ"><article class="step-card"><div class="step-head"><b>1</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="16" height="28" rx="3"></rect><rect x="27" y="8" width="16" height="28" rx="3"></rect><path d="m15 26 5 5 9-12"></path></svg></div></div><h3>選ぶ</h3><p>LP・漫画・Instagram・スライドから、今の仕事に必要なものを1つ選びます。</p></article><article class="step-card"><div class="step-head"><b>2</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38h32V18H26l-5-6H8z"></path><path d="M24 35V23M19 28l5-5 5 5"></path></svg></div></div><h3>素材を入れる</h3><p>商品・サービス、届けたい相手、伝えたい価値など、自分の材料を入力します。</p></article><article class="step-card"><div class="step-head"><b>3</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m9 39 21-21M27 9l3-6 3 6 6 3-6 3-3 6-3-6-6-3zM32 30l2-4 2 4 4 2-4 2-2 4-2-4-4-2z"></path><path d="m7 41 7-2-5-5z"></path></svg></div></div><h3>生成する</h3><p>最新AIの制作工程を動かし、仕事で使うための一品へ整えていきます。</p></article></div><a class="button button-outline" href="https://ougi-shokudo.vercel.app/" target="_blank" rel="noopener noreferrer">実際の奥義食堂を見る<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></section><section id="hosts" class="hosts-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>03</span> HOSTS</p><h2>主催者</h2><p>ビジネスとAI制作の両面から、3人で体験を支えます。</p></div><div class="hosts-grid"><article class="host-card"><div class="host-photo"><img src="./hirokun.webp" alt="田中 啓之（ひろくん）"/></div><div class="host-body"><span>HIROYUKI TANAKA</span><h3>田中 啓之<small>（<!-- -->ひろくん<!-- -->）</small></h3><strong>三方よしAI共創コンサルタント／GPTs研究会創設者</strong><p>AI氣道、Claude Code、AIエージェントの実践会を主催。難しいAIを、商売の現場で使える形へ翻訳してきた。</p></div></article><article class="host-card"><div class="host-photo"><img src="./takasakisan.webp" alt="髙崎 翔太（高崎さん）"/></div><div class="host-body"><span>SHOTA TAKASAKI</span><h3>髙崎 翔太<small>（<!-- -->高崎さん<!-- -->）</small></h3><strong>if(塾)塾頭／起業家・AI開発実践者</strong><p>独自のワークフロービルダーを開発し、Claude Codeなどで実務ツールを構築。アシュラの開発・技術を担当。</p></div></article><article class="host-card"><div class="host-photo"><img src="./takumikun.webp" alt="山﨑 琢己（たくみくん）"/></div><div class="host-body"><span>TAKUMI YAMAZAKI</span><h3>山﨑 琢己<small>（<!-- -->たくみくん<!-- -->）</small></h3><strong>if(塾)塾長／NPO法人if(AI)理事</strong><p>AI API接続やダッシュボード構築、教育とAIの実践を担う。参加者の制作工程と操作を支える。</p></div></article></div></div></section><section id="overview" class="overview-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>04</span> EVENT INFO</p><h2>開催概要</h2></div><dl class="overview-list"><div><dt>開催日</dt><dd><strong>2026年8月17日</strong><span>月曜日</span></dd></div><div><dt>開始時間</dt><dd><strong>15:00〜</strong></dd></div><div><dt>開催形式</dt><dd><strong>オンライン</strong></dd></div><div><dt>参加費</dt><dd><strong>0円</strong></dd></div></dl><div id="registration" class="registration-card"><div class="registration-copy"><p class="eyebrow"><span>05</span> ENTRY</p><h2>参加申込</h2><p>必要事項を送信すると、その場でZoom参加リンクを受け取れます。</p><ul><li><b>1</b><span>フォームを送信</span></li><li><b>2</b><span>完了画面でZoomを確認</span></li><li><b>3</b><span>自動返信メールにも同じリンク</span></li></ul></div><form class="registration-form" accept-charset="UTF-8" method="post"><input type="hidden" name="event" value="ashura-ai-experience-20260817"/><input type="hidden" name="submittedAt" value="2026-08-17T00:00:00+09:00"/><div class="form-field"><label for="name">お名前 <em>必須</em></label><input id="name" type="text" autoComplete="name" required="" maxLength="80" placeholder="山田 太郎" name="name"/></div><div class="form-field"><label for="email">メールアドレス <em>必須</em></label><input id="email" type="email" inputMode="email" autoComplete="email" required="" maxLength="200" placeholder="you@example.com" name="email"/><small>Zoom参加リンクを、このアドレスへ自動返信します。</small></div><div class="form-field"><label for="business">商品・サービス名 <span>任意</span></label><input id="business" type="text" maxLength="120" placeholder="当日題材にしたい商品・サービス" name="business"/></div><fieldset class="form-field menu-choice-field"><legend>作ってみたいもの <em>必須</em></legend><div class="form-choice-grid"><label><input type="radio" required="" name="menu" value="LP御膳"/><span>LP御膳</span></label><label><input type="radio" required="" name="menu" value="漫画セット"/><span>漫画セット</span></label><label><input type="radio" required="" name="menu" value="インスタ小鉢"/><span>インスタ小鉢</span></label><label><input type="radio" required="" name="menu" value="スライド定食"/><span>スライド定食</span></label></div></fieldset><div class="form-trap" aria-hidden="true"><label for="website">ウェブサイト</label><input id="website" type="text" tabindex="-1" autoComplete="off" name="website"/></div><label class="consent-field"><input type="checkbox" required="" name="consent" value="同意する"/><span>入力内容を、本体験会の受付・連絡に利用することに同意します。</span></label><button class="button button-primary registration-submit" type="submit" disabled="">申込受付を接続中<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button><p class="registration-note">送信後の完了画面にZoom参加リンクを表示し、同じ内容を自動返信メールでもお届けします。</p></form></div></div></section></main><footer class="site-footer"><div class="shell"><span>アシュラ｜最新AI実践体験会</span><small>2026.8.17 MON 15:00 ONLINE</small></div></footer><a class="mobile-cta" href="#registration">0円で参加を申し込む<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></body>
 </html>
