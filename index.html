@@ -2710,9 +2710,8 @@
     .archive-form-frame {
       display: block;
       width: 100%;
-      min-height: 520px;
       border: 0;
-      background: #11100e;
+      background: #0b0a09;
     }
 
     .archive-form-frame.is-complete {
@@ -2739,42 +2738,82 @@
       padding: 0;
     }
 
-    .archive-preview-form {
+    .archive-signup-form {
       display: grid;
-      gap: 18px;
+      gap: 20px;
       max-width: 590px;
       margin-inline: auto;
+      padding: 28px;
+      border: 1px solid rgba(255, 250, 240, 0.16);
+      background: #181613;
     }
 
-    .archive-preview-form label {
+    .archive-field {
       display: grid;
-      gap: 7px;
+      gap: 9px;
+    }
+
+    .archive-signup-form label {
       color: #fffaf0;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 800;
     }
 
-    .archive-preview-form input {
+    .archive-required {
+      display: inline-flex;
+      min-height: 22px;
+      align-items: center;
+      margin-left: 8px;
+      padding: 2px 7px;
+      color: #fff;
+      background: #f13f0c;
+      font-size: 11px;
+      line-height: 1;
+    }
+
+    .archive-signup-form input {
       width: 100%;
-      min-height: 54px;
-      padding: 12px 14px;
-      border: 1px solid rgba(255, 250, 240, 0.28);
+      min-height: 58px;
+      padding: 13px 16px;
+      border: 2px solid transparent;
       border-radius: 4px;
       color: #080807;
       background: #fff;
       font: inherit;
     }
 
-    .archive-preview-form .button {
+    .archive-signup-form input:focus-visible {
+      border-color: #f13f0c;
+      outline: 3px solid rgba(241, 63, 12, 0.28);
+      outline-offset: 2px;
+    }
+
+    .archive-signup-form .button {
       width: 100%;
+      min-height: 64px;
       border: 0;
       cursor: pointer;
     }
 
-    .archive-form-note {
-      margin: 16px 0 0;
+    .archive-signup-form .button:disabled {
+      cursor: wait;
+      opacity: 0.7;
+    }
+
+    .archive-privacy {
+      margin: -2px 0 0;
       color: #a9a095;
       font-size: 12px;
+      line-height: 1.65;
+      text-align: center;
+      text-wrap: pretty;
+    }
+
+    .archive-submit-status {
+      min-height: 24px;
+      margin: 0;
+      color: #fffaf0;
+      font-size: 13px;
       text-align: center;
     }
 
@@ -2788,7 +2827,7 @@
       }
 
       .archive-registration-card .registration-copy h2 {
-        font-size: clamp(36px, 12vw, 48px);
+        font-size: clamp(34px, 10vw, 40px);
       }
 
       .archive-registration-card .registration-copy ul {
@@ -2803,19 +2842,24 @@
         padding: 0 20px 38px;
       }
 
-      .archive-form-frame {
-        min-height: 560px;
+      .archive-signup-form {
+        gap: 17px;
+        padding: 20px 16px;
       }
 
       .archive-form-frame.is-complete {
         min-height: 2400px;
       }
+
+      .mobile-cta {
+        bottom: max(10px, env(safe-area-inset-bottom));
+      }
     }
   </style>
   <script>
     (() => {
-      const utageFormUrl = "https://utage-system.com/p/w8O7nKrbaFfE";
-      const isPreview = utageFormUrl.startsWith("__");
+      const utageActionUrl =
+        "https://utage-system.com/form/action/1diorMHZeZA2";
 
       document.title = "【7日間限定】アシュラAI実践体験会｜無料アーカイブ";
 
@@ -2860,48 +2904,68 @@
             <li><b>3</b><span>申込から7日間限定</span></li>
           </ul>
         </div>
-        <div class="archive-form-panel">
+        <div class="archive-form-panel" id="archive-form">
           <p class="zoom-direct-label">ARCHIVE ENTRY</p>
           <h3>お名前・メールアドレスを<br>入力してください</h3>
           <p>送信後、視聴ページへ移動します。視聴URLはメールでもお送りします。</p>
           <div id="archive-form-host"></div>
-          <p class="archive-form-note">入力情報はアーカイブのご案内と関連情報の配信に使用します。</p>
         </div>`;
 
         const host = document.querySelector("#archive-form-host");
-        if (isPreview) {
-          host.innerHTML = `
-          <form class="archive-preview-form" id="archive-preview-form">
-            <label>お名前（必須）<input name="name" autocomplete="name" required placeholder="山田 太郎"></label>
-            <label>メールアドレス（必須）<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
-            <button class="button button-primary" type="submit"><span class="zoom-button-copy"><small>入力は約30秒</small><b>無料でアーカイブを受け取る</b></span></button>
-          </form>`;
-          host.querySelector("form").addEventListener("submit", (event) => {
-            event.preventDefault();
-            registration.classList.add("is-complete");
-            host.innerHTML =
-              '<iframe class="archive-form-frame is-complete" title="アシュラAI体験会 アーカイブ視聴ページ" src="./utage/archive-page.html"></iframe>';
-            host.scrollIntoView({ behavior: "smooth", block: "start" });
-          });
-        } else {
-          const iframe = document.createElement("iframe");
-          iframe.className = "archive-form-frame";
-          iframe.title = "アシュラAI体験会 アーカイブ申込フォーム";
-          iframe.src = utageFormUrl;
-          iframe.loading = "lazy";
-          let frameLoads = 0;
-          iframe.addEventListener("load", () => {
-            frameLoads += 1;
-            if (frameLoads > 1) {
-              iframe.classList.add("is-complete");
-              registration.classList.add("is-complete");
-              registration.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-          });
-          host.appendChild(iframe);
+        document
+          .querySelectorAll('a[href="#archive-registration"]')
+          .forEach((link) => link.setAttribute("href", "#archive-form"));
+        host.innerHTML = `
+          <form class="archive-signup-form" id="archive-signup-form" method="POST" action="${utageActionUrl}" target="archive-result-frame">
+            <div class="archive-field">
+              <label for="archive-name">お名前<span class="archive-required">必須</span></label>
+              <input id="archive-name" name="name" autocomplete="name" required placeholder="山田 太郎">
+            </div>
+            <div class="archive-field">
+              <label for="archive-email">メールアドレス<span class="archive-required">必須</span></label>
+              <input id="archive-email" name="mail" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
+            </div>
+            <input type="hidden" name="type" value="custom">
+            <input type="hidden" name="action_id" value="">
+            <input type="hidden" name="sid" value="">
+            <input type="hidden" name="rid" value="">
+            <input type="hidden" name="scid" value="hFhTHbXddzog">
+            <button class="button button-primary" type="submit" name="send"><span class="zoom-button-copy"><small>入力は約30秒</small><b>無料でアーカイブを受け取る</b></span></button>
+            <p class="archive-privacy">入力情報はアーカイブのご案内と関連情報の配信に使用します。</p>
+            <p class="archive-submit-status" id="archive-submit-status" aria-live="polite"></p>
+          </form>
+          <iframe class="archive-form-frame" id="archive-result-frame" name="archive-result-frame" title="アシュラAI体験会 アーカイブ視聴ページ" hidden></iframe>`;
+
+        const form = document.querySelector("#archive-signup-form");
+        const iframe = document.querySelector("#archive-result-frame");
+        const status = document.querySelector("#archive-submit-status");
+        const submitButton = form.querySelector('button[type="submit"]');
+        let submitted = false;
+
+        form.addEventListener("submit", () => {
+          submitted = true;
+          submitButton.disabled = true;
+          status.textContent = "お申し込みを送信しています…";
+        });
+
+        iframe.addEventListener("load", () => {
+          if (!submitted) return;
+          iframe.hidden = false;
+          iframe.classList.add("is-complete");
+          registration.classList.add("is-complete");
+          form.remove();
+          registration.scrollIntoView({ block: "start" });
+        });
+
+        if (
+          location.hash === "#archive-registration" ||
+          location.hash === "#archive-form"
+        ) {
+          requestAnimationFrame(() =>
+            document
+              .querySelector(location.hash)
+              ?.scrollIntoView({ block: "start" }),
+          );
         }
       }
 
