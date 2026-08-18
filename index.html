@@ -1,2236 +1,2915 @@
 <!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>【無料】売上UPにつながるLP・スライド・漫画・インスタ攻略｜アシュラAI実践体験会</title>
-  <meta name="description" content="売上UPにつながるLP・スライド・漫画・インスタ制作を、自分の商品・サービスを題材に最新AIで実践する無料体験会。2026年8月17日（月）15:00、オンライン開催。">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="【無料】売上UPにつながる4つのAI制作を実践。">
-  <meta property="og:description" content="売上UPにつながるLP・スライド・漫画・インスタ制作を、自分の商品・サービスを題材に最新AIで実践するアシュラAI体験会。">
-  <meta property="og:url" content="https://tanaboo0502.github.io/ashura-ai-experience-0817/">
-  <meta property="og:image" content="https://tanaboo0502.github.io/ashura-ai-experience-0817/hero-banner-v2.webp">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="【無料】売上UPにつながる4つのAI制作を実践。">
-  <meta name="twitter:description" content="LP・スライド・漫画・インスタ攻略を、自分の題材で実践する最新AI体験会。">
-  <meta name="twitter:image" content="https://tanaboo0502.github.io/ashura-ai-experience-0817/hero-banner-v2.webp">
-  <link rel="icon" href="./favicon.svg">
-  <style>:root {
-  --ink: #080807;
-  --ink-soft: #11100e;
-  --ink-card: #181613;
-  --paper: #f4ead6;
-  --white: #fffaf0;
-  --muted: #c7bfb2;
-  --red: #f13f0c;
-  --red-bright: #ff5a16;
-  --gold: #d7a739;
-  --gold-pale: #f2d38d;
-  --line: rgba(242, 211, 141, 0.36);
-  --line-soft: rgba(255, 250, 240, 0.16);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 86px;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  color: var(--white);
-  background: var(--ink);
-  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-body::selection {
-  color: var(--white);
-  background: var(--red);
-}
-
-img,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.ac-runtime-form {
-  display: none !important;
-}
-
-a {
-  color: inherit;
-}
-
-h1,
-h2,
-h3,
-p,
-figure {
-  margin-top: 0;
-}
-
-h1,
-h2 {
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
-  font-weight: 900;
-}
-
-.shell {
-  width: min(1180px, calc(100% - 48px));
-  margin-inline: auto;
-}
-
-.urgent-bar {
-  position: relative;
-  z-index: 40;
-  color: var(--white);
-  background: linear-gradient(90deg, #ef3600, var(--red-bright));
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
-
-.urgent-inner {
-  display: flex;
-  min-height: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
-.urgent-inner strong,
-.urgent-inner span {
-  display: inline-flex;
-  min-height: 22px;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 17px;
-  border-right: 1px solid rgba(255, 250, 240, 0.46);
-  white-space: nowrap;
-}
-
-.urgent-inner strong {
-  color: var(--gold-pale);
-}
-
-.urgent-inner span:last-child {
-  border-right: 0;
-}
-
-.site-header {
-  position: sticky;
-  z-index: 30;
-  top: 0;
-  border-bottom: 1px solid var(--line-soft);
-  background: rgba(8, 8, 7, 0.94);
-  backdrop-filter: blur(16px);
-}
-
-.header-inner {
-  display: flex;
-  min-height: 74px;
-  align-items: center;
-  gap: 30px;
-}
-
-.brand {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  column-gap: 10px;
-  flex: 0 0 auto;
-  color: var(--white);
-  text-decoration: none;
-  line-height: 1;
-}
-
-.brand-mark {
-  grid-row: 1 / 3;
-  color: var(--red);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 25px;
-  font-weight: 900;
-  letter-spacing: -0.18em;
-}
-
-.brand > span:not(.brand-mark) {
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 23px;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-}
-
-.brand small {
-  margin-top: 6px;
-  color: #a9a095;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-}
-
-.site-header nav {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-left: auto;
-}
-
-.site-header nav a {
-  position: relative;
-  color: #d5cec4;
-  font-size: 12px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.site-header nav a::after {
-  position: absolute;
-  right: 0;
-  bottom: -7px;
-  left: 0;
-  height: 2px;
-  content: "";
-  background: var(--red);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 180ms ease;
-}
-
-.site-header nav a:hover::after {
-  transform: scaleX(1);
-}
-
-.header-cta {
-  display: inline-flex;
-  min-height: 46px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 0 17px;
-  border: 1px solid var(--red);
-  color: var(--white);
-  background: var(--red);
-  font-size: 12px;
-  font-weight: 900;
-  text-decoration: none;
-  transition: background 180ms ease, border-color 180ms ease;
-}
-
-.header-cta:hover {
-  border-color: var(--red-bright);
-  background: var(--red-bright);
-}
-
-.header-cta svg,
-.button svg,
-.mobile-cta svg {
-  width: 19px;
-  flex: 0 0 auto;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-}
-
-.zoom-button-copy {
-  display: grid;
-  gap: 2px;
-  line-height: 1.25;
-  text-align: center;
-}
-
-.zoom-button-copy small,
-.zoom-button-copy b {
-  display: block;
-}
-
-.zoom-button-copy small {
-  color: #fff1c9;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.02em;
-}
-
-.zoom-button-copy b {
-  font-size: inherit;
-}
-
-.zoom-button-copy.compact small {
-  font-size: 8px;
-}
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.024) 1px, transparent 1px),
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    var(--ink);
-  background-size: 64px 64px, 64px 64px, auto;
-}
-
-.hero-banner-section {
-  padding: 28px 0 38px;
-}
-
-.hero-banner-section::before,
-.hero-banner-section::after {
-  display: none;
-}
-
-.hero-banner-shell {
-  display: grid;
-  gap: 20px;
-}
-
-.hero-banner-image {
-  width: 100%;
-  aspect-ratio: 1200 / 630;
-  border: 1px solid var(--line);
-  object-fit: cover;
-  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.58);
-}
-
-.hero-banner-action {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-banner-action .button {
-  min-width: 390px;
-}
-
-.hero::before,
-.hero::after {
-  position: absolute;
-  content: "";
-  pointer-events: none;
-}
-
-.hero::before {
-  top: 31%;
-  left: -90px;
-  width: 340px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-  transform: rotate(18deg);
-}
-
-.hero::after {
-  right: -14%;
-  bottom: -270px;
-  width: 700px;
-  height: 700px;
-  border: 1px solid rgba(215, 167, 57, 0.22);
-  border-radius: 50%;
-}
-
-.hero-glow {
-  position: absolute;
-  top: 8%;
-  right: 4%;
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, rgba(215, 167, 57, 0.18), transparent 68%);
-  pointer-events: none;
-}
-
-.hero-grid {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  min-height: 720px;
-  grid-template-columns: minmax(0, 1.05fr) minmax(390px, 0.95fr);
-  align-items: center;
-  gap: 46px;
-  padding-top: 62px;
-  padding-bottom: 66px;
-}
-
-.hero-copy {
-  position: relative;
-  z-index: 4;
-}
-
-.hero-kicker {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  margin-bottom: 20px;
-  color: var(--white);
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.15em;
-}
-
-.hero-kicker::before {
-  display: inline-grid;
-  width: 56px;
-  height: 25px;
-  place-items: center;
-  content: "ASHURA";
-  color: var(--white);
-  background: var(--red);
-  font-size: 9px;
-  letter-spacing: 0.06em;
-}
-
-.hero-kicker {
-  font-size: 0;
-}
-
-.hero-kicker span {
-  color: var(--gold-pale);
-  font-size: 11px;
-}
-
-.hero h1 {
-  max-width: 720px;
-  margin-bottom: 24px;
-  font-size: clamp(46px, 4.35vw, 62px);
-  line-height: 1.07;
-  letter-spacing: -0.055em;
-}
-
-.hero h1 span,
-.hero h1 em {
-  display: block;
-  white-space: nowrap;
-}
-
-.hero h1 em {
-  position: relative;
-  color: var(--gold-pale);
-  font-size: 0.92em;
-  font-style: normal;
-}
-
-.hero h1 em::after {
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-  left: 0;
-  height: 6px;
-  content: "";
-  background: var(--red);
-  transform: skewX(-20deg);
-}
-
-.hero-lead {
-  max-width: 650px;
-  margin-bottom: 27px;
-  color: #ded6cb;
-  font-size: clamp(16px, 1.45vw, 19px);
-  font-weight: 650;
-  line-height: 1.9;
-}
-
-.button {
-  display: inline-flex;
-  min-height: 58px;
-  align-items: center;
-  justify-content: center;
-  gap: 26px;
-  padding: 0 30px;
-  border: 1px solid transparent;
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-}
-
-.button-primary {
-  color: var(--white);
-  background: linear-gradient(90deg, #ed3604, var(--red-bright));
-  box-shadow: 0 12px 34px rgba(241, 63, 12, 0.25);
-}
-
-.button-primary:hover {
-  background: var(--red-bright);
-}
-
-.hero-facts {
-  display: grid;
-  max-width: 650px;
-  grid-template-columns: 1.45fr 1fr 1fr 0.8fr;
-  margin-top: 30px;
-  border-top: 1px solid var(--line-soft);
-  border-bottom: 1px solid var(--line-soft);
-}
-
-.hero-facts div {
-  padding: 14px 15px;
-  border-right: 1px solid var(--line-soft);
-}
-
-.hero-facts div:first-child {
-  padding-left: 0;
-}
-
-.hero-facts div:last-child {
-  border-right: 0;
-}
-
-.hero-facts small,
-.hero-facts strong {
-  display: block;
-}
-
-.hero-facts small {
-  margin-bottom: 2px;
-  color: var(--red-bright);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.15em;
-}
-
-.hero-facts strong {
-  font-size: 14px;
-  line-height: 1.35;
-  white-space: nowrap;
-}
-
-.hero-facts strong span {
-  color: var(--gold-pale);
-  font-size: 10px;
-}
-
-.hero-hosts {
-  position: relative;
-  min-height: 570px;
-}
-
-.hero-sun {
-  position: absolute;
-  top: 47%;
-  left: 49%;
-  width: 410px;
-  height: 410px;
-  border: 1px solid rgba(215, 167, 57, 0.5);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hero-sun::after {
-  position: absolute;
-  inset: 28px;
-  border: 1px solid rgba(215, 167, 57, 0.15);
-  border-radius: inherit;
-  content: "";
-}
-
-.hero-host {
-  position: absolute;
-  z-index: 2;
-  margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--ink-card);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
-}
-
-.hero-host img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-host figcaption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 28px 12px 10px;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.94));
-  font-size: 12px;
-  font-weight: 900;
-}
-
-.hero-host figcaption small {
-  display: block;
-  color: var(--gold-pale);
-  font-size: 9px;
-}
-
-.hero-host-main {
-  right: 82px;
-  bottom: 2px;
-  width: 310px;
-  height: 470px;
-}
-
-.hero-host-main img {
-  object-position: center 24%;
-}
-
-.hero-host-top {
-  top: 0;
-  right: -8px;
-  width: 168px;
-  height: 238px;
-  transform: rotate(2deg);
-}
-
-.hero-host-top img {
-  object-position: center 20%;
-}
-
-.hero-host-bottom {
-  right: -2px;
-  bottom: 8px;
-  width: 180px;
-  height: 245px;
-  transform: rotate(-1.5deg);
-}
-
-.hero-host-bottom img {
-  object-position: center 18%;
-}
-
-.section-heading {
-  max-width: 800px;
-  margin-bottom: 42px;
-}
-
-.centered-heading {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.section-heading h2 {
-  margin: 12px 0 14px;
-  font-size: clamp(42px, 5.2vw, 68px);
-  line-height: 1.15;
-  letter-spacing: -0.045em;
-}
-
-.section-heading h2 em {
-  color: var(--gold-pale);
-  font-style: normal;
-}
-
-.section-heading > p:last-child {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 16px;
-}
-
-.eyebrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 0;
-  color: var(--gold-pale);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.15em;
-}
-
-.eyebrow span {
-  display: grid;
-  width: 28px;
-  height: 28px;
-  place-items: center;
-  color: var(--white);
-  background: var(--red);
-  font-size: 9px;
-  letter-spacing: 0;
-}
-
-.menu-section,
-.experience-section,
-.hosts-section,
-.overview-section {
-  position: relative;
-  padding: 112px 0 122px;
-}
-
-.menu-section {
-  border-top: 1px solid var(--line-soft);
-  background:
-    radial-gradient(circle at 50% 0, rgba(215, 167, 57, 0.12), transparent 34rem),
-    var(--ink-soft);
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.menu-card {
-  position: relative;
-  min-height: 350px;
-  padding: 24px 22px 26px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.01));
-  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
-}
-
-.menu-card::after {
-  position: absolute;
-  right: -55px;
-  bottom: -55px;
-  width: 150px;
-  height: 150px;
-  border: 1px solid rgba(241, 63, 12, 0.35);
-  border-radius: 50%;
-  content: "";
-}
-
-.menu-card:hover {
-  border-color: var(--red-bright);
-  background: rgba(241, 63, 12, 0.08);
-  transform: translateY(-4px);
-}
-
-.menu-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 34px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-
-.menu-meta span {
-  color: var(--gold-pale);
-  font-size: 8px;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-}
-
-.menu-meta b {
-  color: var(--red-bright);
-  font-size: 24px;
-  line-height: 1;
-}
-
-.menu-icon {
-  display: grid;
-  width: 76px;
-  height: 76px;
-  margin-bottom: 24px;
-  place-items: center;
-  border: 1px solid var(--line);
-  color: var(--gold-pale);
-}
-
-.menu-icon svg,
-.step-icon svg {
-  width: 46px;
-  height: 46px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-}
-
-.menu-icon svg .fill {
-  fill: currentColor;
-  stroke: none;
-}
-
-.menu-card h3 {
-  margin-bottom: 10px;
-  color: var(--white);
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 29px;
-  line-height: 1.3;
-}
-
-.menu-card > p {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 0;
-  color: #bfb6aa;
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-.choice-note {
-  margin: 20px 0 0;
-  color: var(--gold-pale);
-  font-size: 13px;
-  font-weight: 800;
-  text-align: center;
-}
-
-.experience-section {
-  overflow: hidden;
-  border-top: 1px solid var(--line-soft);
-  background:
-    radial-gradient(circle at 50% 45%, rgba(215, 167, 57, 0.13), transparent 38rem),
-    var(--ink);
-}
-
-.experience-section::before {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  height: 82px;
-  content: "";
-  background: var(--gold);
-}
-
-.experience-shell {
-  position: relative;
-  z-index: 2;
-}
-
-.screen-stage {
-  position: relative;
-  max-width: 940px;
-  margin: 0 auto 28px;
-  padding: 32px 32px 0;
-}
-
-.screen-stage::before {
-  position: absolute;
-  inset: 0 0 28px;
-  border: 1px solid rgba(215, 167, 57, 0.46);
-  content: "";
-  transform: rotate(-0.8deg);
-}
-
-.screen-label {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  padding: 8px 12px;
-  color: var(--ink);
-  background: var(--gold-pale);
-  font-size: 10px;
-  font-weight: 900;
-}
-
-.screen-label span {
-  margin-right: 8px;
-  color: var(--red);
-}
-
-.browser-frame {
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-  border: 1px solid rgba(255, 250, 240, 0.46);
-  background: #24170d;
-  box-shadow: 0 34px 80px rgba(0, 0, 0, 0.58);
-}
-
-.browser-chrome {
-  display: flex;
-  height: 38px;
-  align-items: center;
-  gap: 7px;
-  padding: 0 12px;
-  border-bottom: 1px solid var(--line-soft);
-  background: #070706;
-}
-
-.browser-chrome i {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #6d645a;
-}
-
-.browser-chrome i:first-child {
-  background: var(--red);
-}
-
-.browser-chrome span {
-  margin-left: 9px;
-  color: #8f877c;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 9px;
-}
-
-.browser-frame > img {
-  width: 100%;
-  aspect-ratio: 1000 / 820;
-  object-fit: cover;
-  object-position: left top;
-}
-
-.steps-grid {
-  display: grid;
-  max-width: 940px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 0 auto 32px;
-  border: 1px solid var(--line);
-}
-
-.step-card {
-  position: relative;
-  min-height: 265px;
-  padding: 28px 26px;
-  border-right: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.025);
-}
-
-.step-card:last-child {
-  border-right: 0;
-}
-
-.step-card:not(:last-child)::after {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  right: -13px;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--gold);
-  border-right: 1px solid var(--gold);
-  content: "";
-  background: var(--ink);
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.step-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
-}
-
-.step-head > b {
-  color: var(--gold-pale);
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 54px;
-  line-height: 1;
-}
-
-.step-icon {
-  color: var(--red-bright);
-}
-
-.step-card h3 {
-  margin-bottom: 8px;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 24px;
-}
-
-.step-card p {
-  margin-bottom: 0;
-  color: #bfb6aa;
-  font-size: 13px;
-}
-
-.experience-shell > .button {
-  display: flex;
-  width: max-content;
-  margin-inline: auto;
-}
-
-.button-outline {
-  border-color: var(--gold);
-  color: var(--gold-pale);
-  background: transparent;
-}
-
-.button-outline:hover {
-  border-color: var(--red);
-  color: var(--white);
-  background: var(--red);
-}
-
-.hosts-section {
-  border-top: 1px solid var(--line-soft);
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
-    var(--ink-soft);
-  background-size: 25% 100%, auto;
-}
-
-.hosts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.host-card {
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--ink-card);
-}
-
-.host-card-featured {
-  border-color: var(--red-bright);
-  box-shadow: 0 18px 46px rgba(241, 63, 12, 0.16);
-}
-
-.host-photo {
-  position: relative;
-  aspect-ratio: 4 / 3.65;
-  overflow: hidden;
-  border-bottom: 1px solid var(--line);
-  background: #181410;
-}
-
-.host-photo::after {
-  position: absolute;
-  inset: auto 0 0;
-  height: 34%;
-  content: "";
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
-  pointer-events: none;
-}
-
-.host-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 22%;
-}
-
-.host-featured-label {
-  position: absolute;
-  z-index: 2;
-  top: 12px;
-  left: 12px;
-  padding: 6px 9px;
-  color: var(--white);
-  background: var(--red);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 9px;
-  letter-spacing: 0.12em;
-}
-
-.host-card:first-child .host-photo img {
-  object-position: center 29%;
-}
-
-.host-body {
-  padding: 24px 23px 27px;
-}
-
-.host-body > span {
-  color: var(--red-bright);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.13em;
-}
-
-.host-body h3 {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-  margin: 5px 0 11px;
-  color: var(--white);
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 26px;
-}
-
-.host-body h3 small {
-  color: var(--gold-pale);
-  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-  font-size: 11px;
-}
-
-.host-body strong {
-  display: block;
-  min-height: 3.4em;
-  margin-bottom: 12px;
-  color: #e3dbcf;
-  font-size: 12px;
-  line-height: 1.7;
-}
-
-.host-body p {
-  margin-bottom: 0;
-  color: #aaa196;
-  font-size: 13px;
-}
-
-.overview-section {
-  overflow: hidden;
-  border-top: 1px solid var(--line-soft);
-  background:
-    radial-gradient(circle at 50% 76%, rgba(241, 63, 12, 0.16), transparent 33rem),
-    var(--ink);
-}
-
-.overview-list {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  max-width: 940px;
-  margin: 0 auto 82px;
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
-}
-
-.overview-list div {
-  min-height: 135px;
-  padding: 23px 20px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.overview-list dt {
-  margin-bottom: 10px;
-  color: var(--red-bright);
-  font-size: 11px;
-  font-weight: 900;
-}
-
-.overview-list dd {
-  margin: 0;
-}
-
-.overview-list dd strong,
-.overview-list dd span {
-  display: block;
-}
-
-.registration-card {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.18fr);
-  max-width: 940px;
-  margin-inline: auto;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--ink-card);
-  scroll-margin-top: 112px;
-}
-
-.registration-copy {
-  position: relative;
-  padding: 52px 38px;
-  overflow: hidden;
-  border-right: 1px solid var(--line);
-  background:
-    linear-gradient(145deg, rgba(241, 63, 12, 0.16), transparent 62%),
-    #100e0c;
-}
-
-.registration-copy::after {
-  position: absolute;
-  right: -130px;
-  bottom: -130px;
-  width: 330px;
-  height: 330px;
-  border: 1px solid rgba(215, 167, 57, 0.25);
-  border-radius: 50%;
-  content: "";
-}
-
-.registration-copy .eyebrow {
-  position: relative;
-  z-index: 2;
-  justify-content: flex-start;
-}
-
-.registration-copy h2 {
-  position: relative;
-  z-index: 2;
-  margin: 20px 0 14px;
-  font-size: clamp(45px, 5vw, 64px);
-  line-height: 1.1;
-}
-
-.registration-copy > p:not(.eyebrow) {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 32px;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.registration-copy ul {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.registration-copy li {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  align-items: center;
-  gap: 11px;
-  color: #e0d8cc;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.registration-copy li b {
-  display: grid;
-  width: 30px;
-  height: 30px;
-  place-items: center;
-  border: 1px solid var(--gold);
-  color: var(--gold-pale);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-
-.registration-form {
-  position: relative;
-  padding: 48px 42px 42px;
-  background: #f3eadb;
-  color: #17130e;
-}
-
-.zoom-direct {
-  display: flex;
-  min-height: 420px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 52px 42px;
-  color: #17130e;
-  background:
-    radial-gradient(circle at 85% 12%, rgba(215, 167, 57, 0.2), transparent 38%),
-    #f3eadb;
-}
-
-.zoom-direct-label {
-  margin: 0 0 18px;
-  color: #8e2108;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-}
-
-.zoom-direct h3 {
-  margin: 0 0 18px;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: clamp(38px, 4vw, 54px);
-  line-height: 1.18;
-}
-
-.zoom-direct > p:not(.zoom-direct-label) {
-  max-width: 420px;
-  margin: 0 0 28px;
-  color: #554b3f;
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-.zoom-direct .button {
-  width: 100%;
-  justify-content: center;
-}
-
-.zoom-direct small {
-  display: block;
-  width: 100%;
-  margin-top: 14px;
-  color: #6f655a;
-  font-size: 11px;
-  text-align: center;
-}
-
-.archive-notice {
-  display: grid;
-  max-width: 940px;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 32px;
-  margin: 18px auto 0;
-  padding: 30px 34px;
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(110deg, rgba(215, 167, 57, 0.12), transparent 52%),
-    #100e0c;
-}
-
-.archive-notice-label {
-  margin: 0 0 8px;
-  color: var(--red-bright);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.13em;
-}
-
-.archive-notice h3 {
-  margin: 0 0 8px;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 25px;
-  line-height: 1.35;
-}
-
-.archive-notice-copy > p:last-child {
-  max-width: 610px;
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-.button-newsletter {
-  min-width: 270px;
-  border-color: var(--gold);
-  color: var(--ink);
-  background: var(--gold-pale);
-}
-
-.button-newsletter:hover {
-  color: var(--white);
-  background: var(--red-bright);
-  border-color: var(--red-bright);
-}
-
-.form-field {
-  display: grid;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.form-field label,
-.form-field legend {
-  color: #211a12;
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.form-field label em,
-.form-field legend em {
-  margin-left: 5px;
-  color: #d3330a;
-  font-size: 9px;
-  font-style: normal;
-}
-
-.form-field label > span,
-.form-field legend > span {
-  margin-left: 5px;
-  color: #81766a;
-  font-size: 9px;
-}
-
-.form-field > input {
-  width: 100%;
-  min-height: 52px;
-  padding: 0 14px;
-  border: 1px solid #b7aa99;
-  border-radius: 0;
-  color: #17130e;
-  background: #fffdf8;
-  font: inherit;
-  font-size: 16px;
-}
-
-.form-field > input:focus,
-.form-choice-grid input:focus-visible + span,
-.consent-field input:focus-visible {
-  outline: 3px solid rgba(215, 167, 57, 0.5);
-  outline-offset: 2px;
-}
-
-.form-field > small {
-  color: #6f655a;
-  font-size: 11px;
-}
-
-.menu-choice-field {
-  padding: 0;
-  border: 0;
-}
-
-.form-choice-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-}
-
-.form-choice-grid label {
-  cursor: pointer;
-}
-
-.form-choice-grid input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.form-choice-grid span {
-  display: flex;
-  min-height: 48px;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 10px;
-  border: 1px solid #b7aa99;
-  color: #40372d;
-  background: #fffdf8;
-  font-size: 12px;
-  font-weight: 900;
-  text-align: center;
-  transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
-}
-
-.form-choice-grid input:checked + span {
-  border-color: #d83b10;
-  color: #fffaf0;
-  background: #d83b10;
-}
-
-.form-trap {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.consent-field {
-  display: grid;
-  grid-template-columns: 20px 1fr;
-  align-items: start;
-  gap: 9px;
-  margin: 4px 0 22px;
-  color: #544a3f;
-  cursor: pointer;
-  font-size: 11px;
-  line-height: 1.65;
-}
-
-.consent-field input {
-  width: 18px;
-  height: 18px;
-  margin: 1px 0 0;
-  accent-color: #d83b10;
-}
-
-.registration-submit {
-  width: 100%;
-  border: 0;
-  cursor: pointer;
-}
-
-.registration-submit:disabled {
-  cursor: not-allowed;
-  filter: grayscale(1);
-  opacity: 0.62;
-}
-
-.registration-note {
-  margin: 11px 0 0;
-  color: #6f655a;
-  font-size: 10px;
-  line-height: 1.7;
-  text-align: center;
-}
-
-.registration-feedback {
-  margin: 0;
-  padding: 12px 14px;
-  border: 1px solid rgba(190, 49, 32, 0.4);
-  background: rgba(190, 49, 32, 0.08);
-  color: #7d2318;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.registration-success {
-  align-content: center;
-  min-height: 440px;
-}
-
-.registration-success-label {
-  margin: 0 0 12px;
-  color: var(--orange);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-}
-
-.registration-success h3 {
-  margin: 0 0 20px;
-  font-size: clamp(1.55rem, 4vw, 2.25rem);
-  line-height: 1.25;
-}
-
-.registration-success > div {
-  color: var(--ink-soft);
-  line-height: 1.8;
-}
-
-.registration-success > div a {
-  display: inline-flex;
-  justify-content: center;
-  margin-top: 12px;
-  padding: 14px 20px;
-  background: var(--orange);
-  color: white;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.overview-list dd strong {
-  color: var(--white);
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 22px;
-  line-height: 1.35;
-}
-
-.overview-list dd span {
-  margin-top: 4px;
-  color: var(--gold-pale);
-  font-size: 11px;
-  font-weight: 900;
-}
-
-.final-cta {
-  position: relative;
-  max-width: 940px;
-  margin-inline: auto;
-  padding: 68px 40px 72px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(135deg, rgba(241, 63, 12, 0.11), transparent 58%),
-    var(--ink-card);
-  text-align: center;
-}
-
-.final-cta::before,
-.final-cta::after {
-  position: absolute;
-  content: "";
-  pointer-events: none;
-}
-
-.final-cta::before {
-  top: -175px;
-  left: 50%;
-  width: 480px;
-  height: 480px;
-  border: 1px solid rgba(215, 167, 57, 0.2);
-  border-radius: 50%;
-  transform: translateX(-50%);
-}
-
-.final-cta::after {
-  right: -90px;
-  bottom: -20px;
-  left: -90px;
-  height: 34px;
-  background: var(--red);
-  transform: rotate(-2deg);
-}
-
-.final-cta > * {
-  position: relative;
-  z-index: 2;
-}
-
-.final-cta > p {
-  margin-bottom: 12px;
-  color: var(--gold-pale);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-}
-
-.final-cta h2 {
-  margin: 0 0 28px;
-  font-size: clamp(48px, 6.2vw, 76px);
-  line-height: 1.13;
-  letter-spacing: -0.05em;
-}
-
-.button-final {
-  min-width: 320px;
-}
-
-.site-footer {
-  padding: 31px 0;
-  border-top: 1px solid var(--line-soft);
-  color: #948b80;
-  background: #060605;
-  font-size: 11px;
-}
-
-.site-footer .shell {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.site-footer small {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-
-.mobile-cta {
-  display: none;
-}
-
-a:focus-visible {
-  outline: 3px solid var(--gold-pale);
-  outline-offset: 4px;
-}
-
-@media (max-width: 1080px) {
-  .site-header nav {
-    gap: 17px;
-  }
-
-  .hero-grid {
-    grid-template-columns: minmax(0, 1fr) 385px;
-    gap: 24px;
-  }
-
-  .hero h1 {
-    font-size: clamp(50px, 6vw, 66px);
-  }
-
-  .hero-host-main {
-    right: 66px;
-    width: 280px;
-    height: 440px;
-  }
-
-  .hero-host-top {
-    width: 150px;
-    height: 215px;
-  }
-
-  .hero-host-bottom {
-    width: 158px;
-    height: 220px;
-  }
-
-  .menu-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .menu-card {
-    min-height: 310px;
-  }
-}
-
-@media (max-width: 860px) {
-  .shell {
-    width: min(100% - 36px, 720px);
-  }
-
-  .site-header nav {
-    display: none;
-  }
-
-  .header-cta {
-    margin-left: auto;
-  }
-
-  .hero-grid {
-    min-height: auto;
-    grid-template-columns: 1fr;
-    gap: 46px;
-    padding-top: 70px;
-    padding-bottom: 64px;
-  }
-
-  .hero-copy {
-    max-width: 700px;
-  }
-
-  .hero-hosts {
-    min-height: 520px;
-  }
-
-  .hero-host-main {
-    right: 50%;
-    width: 310px;
-    height: 470px;
-    transform: translateX(50%);
-  }
-
-  .hero-host-top {
-    right: 4%;
-    width: 170px;
-    height: 235px;
-  }
-
-  .hero-host-bottom {
-    right: auto;
-    bottom: 0;
-    left: 3%;
-    width: 178px;
-    height: 240px;
-  }
-
-  .hosts-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .host-card {
-    display: grid;
-    grid-template-columns: minmax(230px, 0.82fr) 1.18fr;
-  }
-
-  .host-photo {
-    height: 100%;
-    aspect-ratio: auto;
-    border-right: 1px solid var(--line);
-    border-bottom: 0;
-  }
-
-  .registration-card {
-    grid-template-columns: 1fr;
-  }
-
-  .registration-copy {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-}
-
-@media (max-width: 620px) {
-  body {
-    padding-bottom: 70px;
-  }
-
-  .shell {
-    width: calc(100% - 28px);
-  }
-
-  .urgent-inner {
-    width: 100%;
-    min-height: 35px;
-    justify-content: stretch;
-  }
-
-  .urgent-inner strong,
-  .urgent-inner span {
-    flex: 1 1 auto;
-    padding-inline: 4px;
-    font-size: 8px;
-    letter-spacing: 0.03em;
-  }
-
-  .urgent-inner span:nth-of-type(3) {
-    display: none;
-  }
-
-  .header-inner {
-    min-height: 62px;
-  }
-
-  .brand > span:not(.brand-mark) {
-    font-size: 19px;
-  }
-
-  .brand-mark {
-    font-size: 21px;
-  }
-
-  .brand small {
-    font-size: 8px;
-  }
-
-  .header-cta {
-    display: none;
-  }
-
-  .hero-grid {
-    gap: 34px;
-    padding-top: 48px;
-    padding-bottom: 44px;
-  }
-
-  .hero-banner-section {
-    padding: 12px 0 28px;
-  }
-
-  .hero-banner-section .hero-banner-shell {
-    width: 100%;
-  }
-
-  .hero-banner-image {
-    border-right: 0;
-    border-left: 0;
-  }
-
-  .hero-banner-action {
-    padding-inline: 14px;
-  }
-
-  .hero-banner-action .button {
-    min-width: 0;
-  }
-
-  .hero-kicker {
-    margin-bottom: 16px;
-  }
-
-  .hero-kicker span {
-    font-size: 8px;
-    letter-spacing: 0.1em;
-  }
-
-  .hero h1 {
-    margin-bottom: 20px;
-    font-size: clamp(30px, 9.4vw, 45px);
-    line-height: 1.08;
-    letter-spacing: -0.06em;
-  }
-
-  .hero h1 em::after {
-    height: 4px;
-  }
-
-  .hero-lead {
-    margin-bottom: 22px;
-    font-size: 14px;
-    line-height: 1.85;
-  }
-
-  .hero-lead br {
-    display: none;
-  }
-
-  .button {
-    width: 100%;
-    min-height: 56px;
-    padding-inline: 20px;
-  }
-
-  .hero-facts {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 24px;
-  }
-
-  .hero-facts div,
-  .hero-facts div:first-child {
-    padding: 11px 10px;
-    border-bottom: 1px solid var(--line-soft);
-  }
-
-  .hero-facts div:nth-child(2) {
-    border-right: 0;
-  }
-
-  .hero-facts div:nth-child(n + 3) {
-    border-bottom: 0;
-  }
-
-  .hero-facts div:nth-child(3) {
-    padding-left: 0;
-  }
-
-  .hero-hosts {
-    display: grid;
-    min-height: 0;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 7px;
-  }
-
-  .hero-sun {
-    top: 50%;
-    width: 260px;
-    height: 260px;
-  }
-
-  .hero-host,
-  .hero-host-main,
-  .hero-host-top,
-  .hero-host-bottom {
-    position: relative;
-    inset: auto;
-    width: auto;
-    height: auto;
-    aspect-ratio: 3 / 4;
-    transform: none;
-  }
-
-  .hero-host figcaption {
-    padding: 24px 6px 7px;
-    font-size: 9px;
-    line-height: 1.35;
-  }
-
-  .hero-host figcaption small {
-    font-size: 7px;
-  }
-
-  .hero-host-main img,
-  .hero-host-top img,
-  .hero-host-bottom img {
-    object-position: center 20%;
-  }
-
-  .menu-section,
-  .experience-section,
-  .hosts-section,
-  .overview-section {
-    padding-top: 78px;
-    padding-bottom: 84px;
-  }
-
-  .section-heading {
-    margin-bottom: 30px;
-  }
-
-  .section-heading h2 {
-    font-size: clamp(34px, 10.5vw, 46px);
-  }
-
-  .section-heading > p:last-child {
-    font-size: 14px;
-  }
-
-  .eyebrow {
-    font-size: 9px;
-  }
-
-  .eyebrow span {
-    width: 24px;
-    height: 24px;
-  }
-
-  .menu-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
-  }
-
-  .menu-card {
-    min-height: 302px;
-    padding: 16px 14px 18px;
-  }
-
-  .menu-meta {
-    margin-bottom: 20px;
-  }
-
-  .menu-meta span {
-    max-width: 80px;
-    overflow: hidden;
-    font-size: 7px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .menu-meta b {
-    font-size: 20px;
-  }
-
-  .menu-icon {
-    width: 58px;
-    height: 58px;
-    margin-bottom: 18px;
-  }
-
-  .menu-icon svg {
-    width: 35px;
-    height: 35px;
-  }
-
-  .menu-card h3 {
-    margin-bottom: 8px;
-    font-size: 22px;
-    line-height: 1.35;
-  }
-
-  .menu-card > p {
-    font-size: 12px;
-    line-height: 1.7;
-  }
-
-  .choice-note {
-    font-size: 12px;
-  }
-
-  .screen-stage {
-    margin-bottom: 20px;
-    padding: 30px 8px 0;
-  }
-
-  .screen-stage::before {
-    inset: 0 0 10px;
-  }
-
-  .screen-label {
-    padding: 6px 8px;
-    font-size: 8px;
-  }
-
-  .browser-chrome {
-    height: 31px;
-  }
-
-  .browser-chrome span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .steps-grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 24px;
-  }
-
-  .step-card {
-    display: grid;
-    min-height: 0;
-    grid-template-columns: 76px 1fr;
-    column-gap: 15px;
-    padding: 20px 18px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .step-card:last-child {
-    border-bottom: 0;
-  }
-
-  .step-card:not(:last-child)::after {
-    top: auto;
-    right: 50%;
-    bottom: -10px;
-    width: 19px;
-    height: 19px;
-    transform: translateX(50%) rotate(135deg);
-  }
-
-  .step-head {
-    grid-row: 1 / 3;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-    margin-bottom: 0;
-  }
-
-  .step-head > b {
-    font-size: 42px;
-  }
-
-  .step-icon svg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .step-card h3 {
-    margin-top: 3px;
-    margin-bottom: 5px;
-    font-size: 20px;
-  }
-
-  .step-card p {
-    font-size: 12px;
-  }
-
-  .experience-shell > .button {
-    width: 100%;
-  }
-
-  .hosts-grid {
-    gap: 13px;
-  }
-
-  .host-card {
-    display: block;
-  }
-
-  .host-photo {
-    height: auto;
-    aspect-ratio: 4 / 3.5;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .host-body {
-    padding: 20px 18px 22px;
-  }
-
-  .host-body h3 {
-    display: block;
-    font-size: 24px;
-  }
-
-  .host-body h3 small {
-    display: block;
-    margin-top: 3px;
-  }
-
-  .host-body strong {
-    min-height: 0;
-  }
-
-  .overview-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-bottom: 48px;
-  }
-
-  .overview-list div {
-    min-height: 122px;
-    padding: 18px 14px;
-  }
-
-  .overview-list dd strong {
-    font-size: 19px;
-  }
-
-  .final-cta {
-    padding: 50px 18px 58px;
-  }
-
-  .registration-card {
-    scroll-margin-top: 86px;
-  }
-
-  .registration-copy {
-    padding: 40px 22px 34px;
-  }
-
-  .registration-copy h2 {
-    font-size: 43px;
-  }
-
-  .registration-copy > p:not(.eyebrow) {
-    margin-bottom: 24px;
-  }
-
-  .registration-form {
-    padding: 32px 18px 28px;
-  }
-
-  .zoom-direct {
-    min-height: 0;
-    padding: 36px 22px 32px;
-  }
-
-  .zoom-direct h3 {
-    font-size: 38px;
-  }
-
-  .archive-notice {
-    grid-template-columns: 1fr;
-    gap: 22px;
-    padding: 28px 22px;
-  }
-
-  .archive-notice h3 {
-    font-size: 24px;
-  }
-
-  .button-newsletter {
-    min-width: 0;
-  }
-
-  .form-choice-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .final-cta > p {
-    font-size: 10px;
-    line-height: 1.7;
-  }
-
-  .final-cta h2 {
-    font-size: clamp(39px, 11.4vw, 50px);
-  }
-
-  .button-final {
-    min-width: 0;
-  }
-
-  .site-footer {
-    padding: 25px 0;
-  }
-
-  .site-footer .shell {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .mobile-cta {
-    position: fixed;
-    z-index: 50;
-    right: 7px;
-    bottom: 7px;
-    left: 7px;
-    display: flex;
-    min-height: 64px;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    border: 1px solid rgba(255, 250, 240, 0.32);
-    color: var(--white);
-    background: linear-gradient(90deg, #ed3604, var(--red-bright));
-    box-shadow: 0 12px 38px rgba(0, 0, 0, 0.48);
-    font-size: 14px;
-    font-weight: 900;
-    text-decoration: none;
-  }
-
-  .mobile-cta .zoom-button-copy small {
-    font-size: 9px;
-  }
-}
-
-@media (max-width: 390px) {
-  .hero h1 {
-    font-size: 9.4vw;
-  }
-
-  .menu-card {
-    min-height: 312px;
-    padding-inline: 12px;
-  }
-
-  .menu-card h3 {
-    font-size: 20px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-</style>
-</head>
-<body><div class="urgent-bar"><div class="shell urgent-inner"><strong>緊急開催</strong><span>8.17 MON</span><span>15:00</span><span>ONLINE</span><span>参加費0円</span></div></div><header class="site-header"><div class="shell header-inner"><a class="brand" href="#top" aria-label="アシュラ実践体験会 トップへ"><span class="brand-mark" aria-hidden="true">{ }</span><span>アシュラ</span><small>最新AI実践体験会</small></a><nav aria-label="ページ内メニュー"><a href="#menu">4つのAI制作</a><a href="#experience">体験内容</a><a href="#hosts">主催者</a><a href="#overview">開催概要</a></nav><a class="header-cta" href="https://us06web.zoom.us/j/81884571866?pwd=IDPeT7GRMZhuBxJ3NUiPQtFsTIwgeK.1" target="_blank" rel="noopener noreferrer"><span class="zoom-button-copy compact"><small>2026.8.17 15:00〜 入室可能</small><b>Zoomで無料参加</b></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></header><main id="top"><section class="hero hero-banner-section" aria-labelledby="hero-title"><div class="shell hero-banner-shell"><h1 id="hero-title" class="sr-only">売上UPにつながる4つのAI制作を実践。無料！アシュラAI体験会</h1><img class="hero-banner-image" src="./hero-banner-v2.webp" alt="無料！アシュラAI体験会。売上UPにつながる4つのAI制作を実践。LP・スライド・漫画・インスタ攻略。高崎さんをメインに、ひろくん・たくみくんが登場するイベントバナー" fetchPriority="high"/><div class="hero-banner-action"><a class="button button-primary" href="https://us06web.zoom.us/j/81884571866?pwd=IDPeT7GRMZhuBxJ3NUiPQtFsTIwgeK.1" target="_blank" rel="noopener noreferrer"><span class="zoom-button-copy"><small>2026年8月17日 15:00〜入室可能</small><b>Zoom参加ページを開く</b></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></section><section id="menu" class="menu-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>01</span> REVENUE-FOCUSED AI CREATION</p><h2>売上UPにつながる<br/><em>4つのAI制作。</em></h2><p>集客・提案・販売の現場で使う制作物を、最新AIで実践します。</p></div><div class="menu-grid"><article class="menu-card"><div class="menu-meta"><span>LANDING PAGE</span><b>01</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="7" width="32" height="34" rx="3"></rect><path d="M14 15h20M14 22h13M14 29h20"></path><rect x="14" y="34" width="12" height="3" rx="1"></rect></svg></div><h3>売上につなげるLP</h3><p>商品・サービスの魅力を整理し、申込・購入へつなぐLPを制作。</p></article><article class="menu-card"><div class="menu-meta"><span>BUSINESS MANGA</span><b>02</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="7" width="36" height="34" rx="3"></rect><path d="M24 7v34M6 24h36M14 15h4M31 31h4"></path></svg></div><h3>伝わるビジネス漫画</h3><p>難しい価値や商品の物語を、読み進めたくなる漫画に。</p></article><article class="menu-card"><div class="menu-meta"><span>INSTAGRAM</span><b>03</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="8"></rect><circle cx="24" cy="24" r="8"></circle><circle cx="34" cy="14" r="1.5" class="fill"></circle></svg></div><h3>集客インスタ投稿</h3><p>告知・集客で目を止めてもらうInstagram投稿画像に。</p></article><article class="menu-card"><div class="menu-meta"><span>PRESENTATION</span><b>04</b></div><div class="menu-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="26" rx="3"></rect><path d="M24 34v8M16 42h16M13 27l7-7 5 4 9-10"></path></svg></div><h3>提案スライド</h3><p>提案・説明・講座を、相手が理解し動けるスライドに。</p></article></div></div></section><section id="experience" class="experience-section"><div class="shell experience-shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>02</span> HANDS-ON SESSION</p><h2>最新AIを使って、<br/><em>その場で実際につくる。</em></h2><p>見るだけの説明会ではありません。自分の商品・サービスを題材に、売上へつなげる制作を実践します。</p></div><div class="steps-grid" aria-label="体験の3ステップ"><article class="step-card"><div class="step-head"><b>1</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="16" height="28" rx="3"></rect><rect x="27" y="8" width="16" height="28" rx="3"></rect><path d="m15 26 5 5 9-12"></path></svg></div></div><h3>題材を決める</h3><p>売上につなげたい商品・サービスと、届けたい相手を決めます。</p></article><article class="step-card"><div class="step-head"><b>2</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38h32V18H26l-5-6H8z"></path><path d="M24 35V23M19 28l5-5 5 5"></path></svg></div></div><h3>素材を入れる</h3><p>商品・サービス、届けたい相手、伝えたい価値など、自分の材料を入力します。</p></article><article class="step-card"><div class="step-head"><b>3</b><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m9 39 21-21M27 9l3-6 3 6 6 3-6 3-3 6-3-6-6-3zM32 30l2-4 2 4 4 2-4 2-2 4-2-4-4-2z"></path><path d="m7 41 7-2-5-5z"></path></svg></div></div><h3>生成する</h3><p>最新AIの制作工程を動かし、仕事で使える制作物へ整えます。</p></article></div></div></section><section id="hosts" class="hosts-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>03</span> HOSTS</p><h2>主催者</h2><p>アシュラ開発を担う高崎さんを中心に、3人で体験を支えます。</p></div><div class="hosts-grid"><article class="host-card host-card-featured"><div class="host-photo"><img src="./takasakisan.webp" alt="髙崎 翔太（高崎さん）"/><b class="host-featured-label">MAIN HOST</b></div><div class="host-body"><span>SHOTA TAKASAKI</span><h3>髙崎 翔太<small>（<!-- -->高崎さん<!-- -->）</small></h3><strong>if(塾)塾頭／起業家・AI開発実践者</strong><p>独自のワークフロービルダーを開発し、Claude Codeなどで実務ツールを構築。アシュラの開発・技術を担当。</p></div></article><article class="host-card"><div class="host-photo"><img src="./hirokun.webp" alt="田中 啓之（ひろくん）"/></div><div class="host-body"><span>HIROYUKI TANAKA</span><h3>田中 啓之<small>（<!-- -->ひろくん<!-- -->）</small></h3><strong>三方よしAI共創コンサルタント／GPTs研究会創設者</strong><p>AI氣道、Claude Code、AIエージェントの実践会を主催。難しいAIを、商売の現場で使える形へ翻訳してきた。</p></div></article><article class="host-card"><div class="host-photo"><img src="./takumikun.webp" alt="山﨑 琢己（たくみくん）"/></div><div class="host-body"><span>TAKUMI YAMAZAKI</span><h3>山﨑 琢己<small>（<!-- -->たくみくん<!-- -->）</small></h3><strong>if(塾)塾長／NPO法人if(AI)理事</strong><p>AI API接続やダッシュボード構築、教育とAIの実践を担う。参加者の制作工程と操作を支える。</p></div></article></div></div></section><section id="overview" class="overview-section"><div class="shell"><div class="section-heading centered-heading"><p class="eyebrow"><span>04</span> EVENT INFO</p><h2>開催概要</h2></div><dl class="overview-list"><div><dt>開催日</dt><dd><strong>2026年8月17日</strong><span>月曜日</span></dd></div><div><dt>開始時間</dt><dd><strong>15:00〜</strong></dd></div><div><dt>開催形式</dt><dd><strong>オンライン</strong></dd></div><div><dt>参加費</dt><dd><strong>0円</strong></dd></div></dl><div id="registration" class="registration-card"><div class="registration-copy"><p class="eyebrow"><span>05</span> ENTRY</p><h2>参加はこちら</h2><p>申込フォームはありません。下のボタンからZoomへ直接お入りください。</p><ul><li><b>1</b><span>参加費0円</span></li><li><b>2</b><span>フォーム入力不要</span></li><li><b>3</b><span>2026年8月17日 15:00開始</span></li></ul></div><div class="zoom-direct"><p class="zoom-direct-label">DIRECT ACCESS</p><h3>Zoomから<br/>そのまま参加</h3><p>開始時刻になりましたら、下のボタンから参加ページを開いてください。</p><a class="button button-primary" href="https://us06web.zoom.us/j/81884571866?pwd=IDPeT7GRMZhuBxJ3NUiPQtFsTIwgeK.1" target="_blank" rel="noopener noreferrer"><span class="zoom-button-copy"><small>2026年8月17日 15:00〜入室可能</small><b>Zoom参加ページを開く</b></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><small>参加費0円・事前フォーム入力不要</small></div></div><aside class="archive-notice" aria-labelledby="archive-title"><div class="archive-notice-copy"><p class="archive-notice-label">RECORDED SESSION</p><h3 id="archive-title">アーカイブをご希望の方へ</h3><p>体験会は録画します。アーカイブは別途、希望するAI氣道メルマガ登録者に限定配信予定です。</p></div><a class="button button-newsletter" href="https://ai-kidou.jp/#akt-nl" target="_blank" rel="noopener noreferrer"><span>AI氣道メルマガに登録する</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></aside></div></section></main><footer class="site-footer"><div class="shell"><span>アシュラ｜最新AI実践体験会</span><small>2026.8.17 MON 15:00 ONLINE</small></div></footer><a class="mobile-cta" href="https://us06web.zoom.us/j/81884571866?pwd=IDPeT7GRMZhuBxJ3NUiPQtFsTIwgeK.1" target="_blank" rel="noopener noreferrer"><span class="zoom-button-copy compact"><small>2026.8.17 15:00〜 入室可能</small><b>Zoomで無料参加</b></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>【7日間限定】アシュラAI実践体験会｜無料アーカイブ</title>
+    <meta
+      name="description"
+      content="売上UPにつながるLP・スライド・漫画・インスタ制作を実践したアシュラAI体験会の無料アーカイブ。お申し込みから7日間限定で視聴できます。"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="【7日間限定】アシュラAI体験会 無料アーカイブ"
+    />
+    <meta
+      property="og:description"
+      content="LP・スライド・漫画・インスタ攻略を実演した約2時間17分の体験会を、お申し込みから7日間限定で視聴できます。"
+    />
+    <meta
+      property="og:url"
+      content="https://tanaboo0502.github.io/ashura-ai-experience-0817/"
+    />
+    <meta
+      property="og:image"
+      content="https://tanaboo0502.github.io/ashura-ai-experience-0817/hero-banner-v2.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="【7日間限定】アシュラAI体験会 無料アーカイブ"
+    />
+    <meta
+      name="twitter:description"
+      content="約2時間17分のAI実践体験会を、お申し込みから7日間限定で無料視聴。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://tanaboo0502.github.io/ashura-ai-experience-0817/hero-banner-v2.webp"
+    />
+    <link rel="icon" href="./favicon.svg" />
+    <style>
+      :root {
+        --ink: #080807;
+        --ink-soft: #11100e;
+        --ink-card: #181613;
+        --paper: #f4ead6;
+        --white: #fffaf0;
+        --muted: #c7bfb2;
+        --red: #f13f0c;
+        --red-bright: #ff5a16;
+        --gold: #d7a739;
+        --gold-pale: #f2d38d;
+        --line: rgba(242, 211, 141, 0.36);
+        --line-soft: rgba(255, 250, 240, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 86px;
+      }
+
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        color: var(--white);
+        background: var(--ink);
+        font-family:
+          "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", system-ui,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body::selection {
+        color: var(--white);
+        background: var(--red);
+      }
+
+      img,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .ac-runtime-form {
+        display: none !important;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      figure {
+        margin-top: 0;
+      }
+
+      h1,
+      h2 {
+        font-family:
+          "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+        font-weight: 900;
+      }
+
+      .shell {
+        width: min(1180px, calc(100% - 48px));
+        margin-inline: auto;
+      }
+
+      .urgent-bar {
+        position: relative;
+        z-index: 40;
+        color: var(--white);
+        background: linear-gradient(90deg, #ef3600, var(--red-bright));
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+      }
+
+      .urgent-inner {
+        display: flex;
+        min-height: 40px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .urgent-inner strong,
+      .urgent-inner span {
+        display: inline-flex;
+        min-height: 22px;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 17px;
+        border-right: 1px solid rgba(255, 250, 240, 0.46);
+        white-space: nowrap;
+      }
+
+      .urgent-inner strong {
+        color: var(--gold-pale);
+      }
+
+      .urgent-inner span:last-child {
+        border-right: 0;
+      }
+
+      .site-header {
+        position: sticky;
+        z-index: 30;
+        top: 0;
+        border-bottom: 1px solid var(--line-soft);
+        background: rgba(8, 8, 7, 0.94);
+        backdrop-filter: blur(16px);
+      }
+
+      .header-inner {
+        display: flex;
+        min-height: 74px;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .brand {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        column-gap: 10px;
+        flex: 0 0 auto;
+        color: var(--white);
+        text-decoration: none;
+        line-height: 1;
+      }
+
+      .brand-mark {
+        grid-row: 1 / 3;
+        color: var(--red);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: -0.18em;
+      }
+
+      .brand > span:not(.brand-mark) {
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-size: 23px;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+      }
+
+      .brand small {
+        margin-top: 6px;
+        color: #a9a095;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+
+      .site-header nav {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-left: auto;
+      }
+
+      .site-header nav a {
+        position: relative;
+        color: #d5cec4;
+        font-size: 12px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .site-header nav a::after {
+        position: absolute;
+        right: 0;
+        bottom: -7px;
+        left: 0;
+        height: 2px;
+        content: "";
+        background: var(--red);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 180ms ease;
+      }
+
+      .site-header nav a:hover::after {
+        transform: scaleX(1);
+      }
+
+      .header-cta {
+        display: inline-flex;
+        min-height: 46px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 17px;
+        border: 1px solid var(--red);
+        color: var(--white);
+        background: var(--red);
+        font-size: 12px;
+        font-weight: 900;
+        text-decoration: none;
+        transition:
+          background 180ms ease,
+          border-color 180ms ease;
+      }
+
+      .header-cta:hover {
+        border-color: var(--red-bright);
+        background: var(--red-bright);
+      }
+
+      .header-cta svg,
+      .button svg,
+      .mobile-cta svg {
+        width: 19px;
+        flex: 0 0 auto;
+        fill: none;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+      }
+
+      .zoom-button-copy {
+        display: grid;
+        gap: 2px;
+        line-height: 1.25;
+        text-align: center;
+      }
+
+      .zoom-button-copy small,
+      .zoom-button-copy b {
+        display: block;
+      }
+
+      .zoom-button-copy small {
+        color: #fff1c9;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+      }
+
+      .zoom-button-copy b {
+        font-size: inherit;
+      }
+
+      .zoom-button-copy.compact small {
+        font-size: 8px;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.024) 1px,
+            transparent 1px
+          ),
+          linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+          var(--ink);
+        background-size:
+          64px 64px,
+          64px 64px,
+          auto;
+      }
+
+      .hero-banner-section {
+        padding: 28px 0 38px;
+      }
+
+      .hero-banner-section::before,
+      .hero-banner-section::after {
+        display: none;
+      }
+
+      .hero-banner-shell {
+        display: grid;
+        gap: 20px;
+      }
+
+      .hero-banner-image {
+        width: 100%;
+        aspect-ratio: 1200 / 630;
+        border: 1px solid var(--line);
+        object-fit: cover;
+        box-shadow: 0 34px 90px rgba(0, 0, 0, 0.58);
+      }
+
+      .hero-banner-action {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-banner-action .button {
+        min-width: 390px;
+      }
+
+      .hero::before,
+      .hero::after {
+        position: absolute;
+        content: "";
+        pointer-events: none;
+      }
+
+      .hero::before {
+        top: 31%;
+        left: -90px;
+        width: 340px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--gold));
+        transform: rotate(18deg);
+      }
+
+      .hero::after {
+        right: -14%;
+        bottom: -270px;
+        width: 700px;
+        height: 700px;
+        border: 1px solid rgba(215, 167, 57, 0.22);
+        border-radius: 50%;
+      }
+
+      .hero-glow {
+        position: absolute;
+        top: 8%;
+        right: 4%;
+        width: 480px;
+        height: 480px;
+        background: radial-gradient(
+          circle,
+          rgba(215, 167, 57, 0.18),
+          transparent 68%
+        );
+        pointer-events: none;
+      }
+
+      .hero-grid {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        min-height: 720px;
+        grid-template-columns: minmax(0, 1.05fr) minmax(390px, 0.95fr);
+        align-items: center;
+        gap: 46px;
+        padding-top: 62px;
+        padding-bottom: 66px;
+      }
+
+      .hero-copy {
+        position: relative;
+        z-index: 4;
+      }
+
+      .hero-kicker {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin-bottom: 20px;
+        color: var(--white);
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.15em;
+      }
+
+      .hero-kicker::before {
+        display: inline-grid;
+        width: 56px;
+        height: 25px;
+        place-items: center;
+        content: "ASHURA";
+        color: var(--white);
+        background: var(--red);
+        font-size: 9px;
+        letter-spacing: 0.06em;
+      }
+
+      .hero-kicker {
+        font-size: 0;
+      }
+
+      .hero-kicker span {
+        color: var(--gold-pale);
+        font-size: 11px;
+      }
+
+      .hero h1 {
+        max-width: 720px;
+        margin-bottom: 24px;
+        font-size: clamp(46px, 4.35vw, 62px);
+        line-height: 1.07;
+        letter-spacing: -0.055em;
+      }
+
+      .hero h1 span,
+      .hero h1 em {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .hero h1 em {
+        position: relative;
+        color: var(--gold-pale);
+        font-size: 0.92em;
+        font-style: normal;
+      }
+
+      .hero h1 em::after {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        left: 0;
+        height: 6px;
+        content: "";
+        background: var(--red);
+        transform: skewX(-20deg);
+      }
+
+      .hero-lead {
+        max-width: 650px;
+        margin-bottom: 27px;
+        color: #ded6cb;
+        font-size: clamp(16px, 1.45vw, 19px);
+        font-weight: 650;
+        line-height: 1.9;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 58px;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+        padding: 0 30px;
+        border: 1px solid transparent;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition:
+          color 180ms ease,
+          background 180ms ease,
+          border-color 180ms ease,
+          transform 180ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button-primary {
+        color: var(--white);
+        background: linear-gradient(90deg, #ed3604, var(--red-bright));
+        box-shadow: 0 12px 34px rgba(241, 63, 12, 0.25);
+      }
+
+      .button-primary:hover {
+        background: var(--red-bright);
+      }
+
+      .hero-facts {
+        display: grid;
+        max-width: 650px;
+        grid-template-columns: 1.45fr 1fr 1fr 0.8fr;
+        margin-top: 30px;
+        border-top: 1px solid var(--line-soft);
+        border-bottom: 1px solid var(--line-soft);
+      }
+
+      .hero-facts div {
+        padding: 14px 15px;
+        border-right: 1px solid var(--line-soft);
+      }
+
+      .hero-facts div:first-child {
+        padding-left: 0;
+      }
+
+      .hero-facts div:last-child {
+        border-right: 0;
+      }
+
+      .hero-facts small,
+      .hero-facts strong {
+        display: block;
+      }
+
+      .hero-facts small {
+        margin-bottom: 2px;
+        color: var(--red-bright);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 9px;
+        font-weight: 900;
+        letter-spacing: 0.15em;
+      }
+
+      .hero-facts strong {
+        font-size: 14px;
+        line-height: 1.35;
+        white-space: nowrap;
+      }
+
+      .hero-facts strong span {
+        color: var(--gold-pale);
+        font-size: 10px;
+      }
+
+      .hero-hosts {
+        position: relative;
+        min-height: 570px;
+      }
+
+      .hero-sun {
+        position: absolute;
+        top: 47%;
+        left: 49%;
+        width: 410px;
+        height: 410px;
+        border: 1px solid rgba(215, 167, 57, 0.5);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .hero-sun::after {
+        position: absolute;
+        inset: 28px;
+        border: 1px solid rgba(215, 167, 57, 0.15);
+        border-radius: inherit;
+        content: "";
+      }
+
+      .hero-host {
+        position: absolute;
+        z-index: 2;
+        margin: 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--ink-card);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+      }
+
+      .hero-host img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero-host figcaption {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 28px 12px 10px;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.94));
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .hero-host figcaption small {
+        display: block;
+        color: var(--gold-pale);
+        font-size: 9px;
+      }
+
+      .hero-host-main {
+        right: 82px;
+        bottom: 2px;
+        width: 310px;
+        height: 470px;
+      }
+
+      .hero-host-main img {
+        object-position: center 24%;
+      }
+
+      .hero-host-top {
+        top: 0;
+        right: -8px;
+        width: 168px;
+        height: 238px;
+        transform: rotate(2deg);
+      }
+
+      .hero-host-top img {
+        object-position: center 20%;
+      }
+
+      .hero-host-bottom {
+        right: -2px;
+        bottom: 8px;
+        width: 180px;
+        height: 245px;
+        transform: rotate(-1.5deg);
+      }
+
+      .hero-host-bottom img {
+        object-position: center 18%;
+      }
+
+      .section-heading {
+        max-width: 800px;
+        margin-bottom: 42px;
+      }
+
+      .centered-heading {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
+
+      .section-heading h2 {
+        margin: 12px 0 14px;
+        font-size: clamp(42px, 5.2vw, 68px);
+        line-height: 1.15;
+        letter-spacing: -0.045em;
+      }
+
+      .section-heading h2 em {
+        color: var(--gold-pale);
+        font-style: normal;
+      }
+
+      .section-heading > p:last-child {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 0;
+        color: var(--gold-pale);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.15em;
+      }
+
+      .eyebrow span {
+        display: grid;
+        width: 28px;
+        height: 28px;
+        place-items: center;
+        color: var(--white);
+        background: var(--red);
+        font-size: 9px;
+        letter-spacing: 0;
+      }
+
+      .menu-section,
+      .experience-section,
+      .hosts-section,
+      .overview-section {
+        position: relative;
+        padding: 112px 0 122px;
+      }
+
+      .menu-section {
+        border-top: 1px solid var(--line-soft);
+        background:
+          radial-gradient(
+            circle at 50% 0,
+            rgba(215, 167, 57, 0.12),
+            transparent 34rem
+          ),
+          var(--ink-soft);
+      }
+
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .menu-card {
+        position: relative;
+        min-height: 350px;
+        padding: 24px 22px 26px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.045),
+          rgba(255, 255, 255, 0.01)
+        );
+        transition:
+          border-color 180ms ease,
+          background 180ms ease,
+          transform 180ms ease;
+      }
+
+      .menu-card::after {
+        position: absolute;
+        right: -55px;
+        bottom: -55px;
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgba(241, 63, 12, 0.35);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .menu-card:hover {
+        border-color: var(--red-bright);
+        background: rgba(241, 63, 12, 0.08);
+        transform: translateY(-4px);
+      }
+
+      .menu-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 34px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+
+      .menu-meta span {
+        color: var(--gold-pale);
+        font-size: 8px;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+      }
+
+      .menu-meta b {
+        color: var(--red-bright);
+        font-size: 24px;
+        line-height: 1;
+      }
+
+      .menu-icon {
+        display: grid;
+        width: 76px;
+        height: 76px;
+        margin-bottom: 24px;
+        place-items: center;
+        border: 1px solid var(--line);
+        color: var(--gold-pale);
+      }
+
+      .menu-icon svg,
+      .step-icon svg {
+        width: 46px;
+        height: 46px;
+        fill: none;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+      }
+
+      .menu-icon svg .fill {
+        fill: currentColor;
+        stroke: none;
+      }
+
+      .menu-card h3 {
+        margin-bottom: 10px;
+        color: var(--white);
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-size: 29px;
+        line-height: 1.3;
+      }
+
+      .menu-card > p {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 0;
+        color: #bfb6aa;
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      .choice-note {
+        margin: 20px 0 0;
+        color: var(--gold-pale);
+        font-size: 13px;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .experience-section {
+        overflow: hidden;
+        border-top: 1px solid var(--line-soft);
+        background:
+          radial-gradient(
+            circle at 50% 45%,
+            rgba(215, 167, 57, 0.13),
+            transparent 38rem
+          ),
+          var(--ink);
+      }
+
+      .experience-section::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        height: 82px;
+        content: "";
+        background: var(--gold);
+      }
+
+      .experience-shell {
+        position: relative;
+        z-index: 2;
+      }
+
+      .screen-stage {
+        position: relative;
+        max-width: 940px;
+        margin: 0 auto 28px;
+        padding: 32px 32px 0;
+      }
+
+      .screen-stage::before {
+        position: absolute;
+        inset: 0 0 28px;
+        border: 1px solid rgba(215, 167, 57, 0.46);
+        content: "";
+        transform: rotate(-0.8deg);
+      }
+
+      .screen-label {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        padding: 8px 12px;
+        color: var(--ink);
+        background: var(--gold-pale);
+        font-size: 10px;
+        font-weight: 900;
+      }
+
+      .screen-label span {
+        margin-right: 8px;
+        color: var(--red);
+      }
+
+      .browser-frame {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        border: 1px solid rgba(255, 250, 240, 0.46);
+        background: #24170d;
+        box-shadow: 0 34px 80px rgba(0, 0, 0, 0.58);
+      }
+
+      .browser-chrome {
+        display: flex;
+        height: 38px;
+        align-items: center;
+        gap: 7px;
+        padding: 0 12px;
+        border-bottom: 1px solid var(--line-soft);
+        background: #070706;
+      }
+
+      .browser-chrome i {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #6d645a;
+      }
+
+      .browser-chrome i:first-child {
+        background: var(--red);
+      }
+
+      .browser-chrome span {
+        margin-left: 9px;
+        color: #8f877c;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 9px;
+      }
+
+      .browser-frame > img {
+        width: 100%;
+        aspect-ratio: 1000 / 820;
+        object-fit: cover;
+        object-position: left top;
+      }
+
+      .steps-grid {
+        display: grid;
+        max-width: 940px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 0 auto 32px;
+        border: 1px solid var(--line);
+      }
+
+      .step-card {
+        position: relative;
+        min-height: 265px;
+        padding: 28px 26px;
+        border-right: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.025);
+      }
+
+      .step-card:last-child {
+        border-right: 0;
+      }
+
+      .step-card:not(:last-child)::after {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        right: -13px;
+        width: 25px;
+        height: 25px;
+        border-top: 1px solid var(--gold);
+        border-right: 1px solid var(--gold);
+        content: "";
+        background: var(--ink);
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      .step-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+      }
+
+      .step-head > b {
+        color: var(--gold-pale);
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-size: 54px;
+        line-height: 1;
+      }
+
+      .step-icon {
+        color: var(--red-bright);
+      }
+
+      .step-card h3 {
+        margin-bottom: 8px;
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-size: 24px;
+      }
+
+      .step-card p {
+        margin-bottom: 0;
+        color: #bfb6aa;
+        font-size: 13px;
+      }
+
+      .experience-shell > .button {
+        display: flex;
+        width: max-content;
+        margin-inline: auto;
+      }
+
+      .button-outline {
+        border-color: var(--gold);
+        color: var(--gold-pale);
+        background: transparent;
+      }
+
+      .button-outline:hover {
+        border-color: var(--red);
+        color: var(--white);
+        background: var(--red);
+      }
+
+      .hosts-section {
+        border-top: 1px solid var(--line-soft);
+        background:
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px
+          ),
+          var(--ink-soft);
+        background-size:
+          25% 100%,
+          auto;
+      }
+
+      .hosts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .host-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--ink-card);
+      }
+
+      .host-card-featured {
+        border-color: var(--red-bright);
+        box-shadow: 0 18px 46px rgba(241, 63, 12, 0.16);
+      }
+
+      .host-photo {
+        position: relative;
+        aspect-ratio: 4 / 3.65;
+        overflow: hidden;
+        border-bottom: 1px solid var(--line);
+        background: #181410;
+      }
+
+      .host-photo::after {
+        position: absolute;
+        inset: auto 0 0;
+        height: 34%;
+        content: "";
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+        pointer-events: none;
+      }
+
+      .host-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 22%;
+      }
+
+      .host-featured-label {
+        position: absolute;
+        z-index: 2;
+        top: 12px;
+        left: 12px;
+        padding: 6px 9px;
+        color: var(--white);
+        background: var(--red);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 9px;
+        letter-spacing: 0.12em;
+      }
+
+      .host-card:first-child .host-photo img {
+        object-position: center 29%;
+      }
+
+      .host-body {
+        padding: 24px 23px 27px;
+      }
+
+      .host-body > span {
+        color: var(--red-bright);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 9px;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+      }
+
+      .host-body h3 {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        margin: 5px 0 11px;
+        color: var(--white);
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-size: 26px;
+      }
+
+      .host-body h3 small {
+        color: var(--gold-pale);
+        font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+        font-size: 11px;
+      }
+
+      .host-body strong {
+        display: block;
+        min-height: 3.4em;
+        margin-bottom: 12px;
+        color: #e3dbcf;
+        font-size: 12px;
+        line-height: 1.7;
+      }
+
+      .host-body p {
+        margin-bottom: 0;
+        color: #aaa196;
+        font-size: 13px;
+      }
+
+      .overview-section {
+        overflow: hidden;
+        border-top: 1px solid var(--line-soft);
+        background:
+          radial-gradient(
+            circle at 50% 76%,
+            rgba(241, 63, 12, 0.16),
+            transparent 33rem
+          ),
+          var(--ink);
+      }
+
+      .overview-list {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        max-width: 940px;
+        margin: 0 auto 82px;
+        border-top: 1px solid var(--line);
+        border-left: 1px solid var(--line);
+      }
+
+      .overview-list div {
+        min-height: 135px;
+        padding: 23px 20px;
+        border-right: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .overview-list dt {
+        margin-bottom: 10px;
+        color: var(--red-bright);
+        font-size: 11px;
+        font-weight: 900;
+      }
+
+      .overview-list dd {
+        margin: 0;
+      }
+
+      .overview-list dd strong,
+      .overview-list dd span {
+        display: block;
+      }
+
+      .registration-card {
+        display: grid;
+        grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.18fr);
+        max-width: 940px;
+        margin-inline: auto;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--ink-card);
+        scroll-margin-top: 112px;
+      }
+
+      .registration-copy {
+        position: relative;
+        padding: 52px 38px;
+        overflow: hidden;
+        border-right: 1px solid var(--line);
+        background:
+          linear-gradient(145deg, rgba(241, 63, 12, 0.16), transparent 62%),
+          #100e0c;
+      }
+
+      .registration-copy::after {
+        position: absolute;
+        right: -130px;
+        bottom: -130px;
+        width: 330px;
+        height: 330px;
+        border: 1px solid rgba(215, 167, 57, 0.25);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .registration-copy .eyebrow {
+        position: relative;
+        z-index: 2;
+        justify-content: flex-start;
+      }
+
+      .registration-copy h2 {
+        position: relative;
+        z-index: 2;
+        margin: 20px 0 14px;
+        font-size: clamp(45px, 5vw, 64px);
+        line-height: 1.1;
+      }
+
+      .registration-copy > p:not(.eyebrow) {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 32px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .registration-copy ul {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .registration-copy li {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+        gap: 11px;
+        color: #e0d8cc;
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .registration-copy li b {
+        display: grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        border: 1px solid var(--gold);
+        color: var(--gold-pale);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+
+      .registration-form {
+        position: relative;
+        padding: 48px 42px 42px;
+        background: #f3eadb;
+        color: #17130e;
+      }
+
+      .zoom-direct {
+        display: flex;
+        min-height: 420px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 52px 42px;
+        color: #17130e;
+        background:
+          radial-gradient(
+            circle at 85% 12%,
+            rgba(215, 167, 57, 0.2),
+            transparent 38%
+          ),
+          #f3eadb;
+      }
+
+      .zoom-direct-label {
+        margin: 0 0 18px;
+        color: #8e2108;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+      }
+
+      .zoom-direct h3 {
+        margin: 0 0 18px;
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-size: clamp(38px, 4vw, 54px);
+        line-height: 1.18;
+      }
+
+      .zoom-direct > p:not(.zoom-direct-label) {
+        max-width: 420px;
+        margin: 0 0 28px;
+        color: #554b3f;
+        font-size: 14px;
+        line-height: 1.9;
+      }
+
+      .zoom-direct .button {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .zoom-direct small {
+        display: block;
+        width: 100%;
+        margin-top: 14px;
+        color: #6f655a;
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .archive-notice {
+        display: grid;
+        max-width: 940px;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 32px;
+        margin: 18px auto 0;
+        padding: 30px 34px;
+        border: 1px solid var(--line);
+        background:
+          linear-gradient(110deg, rgba(215, 167, 57, 0.12), transparent 52%),
+          #100e0c;
+      }
+
+      .archive-notice-label {
+        margin: 0 0 8px;
+        color: var(--red-bright);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+      }
+
+      .archive-notice h3 {
+        margin: 0 0 8px;
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-size: 25px;
+        line-height: 1.35;
+      }
+
+      .archive-notice-copy > p:last-child {
+        max-width: 610px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      .button-newsletter {
+        min-width: 270px;
+        border-color: var(--gold);
+        color: var(--ink);
+        background: var(--gold-pale);
+      }
+
+      .button-newsletter:hover {
+        color: var(--white);
+        background: var(--red-bright);
+        border-color: var(--red-bright);
+      }
+
+      .form-field {
+        display: grid;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+
+      .form-field label,
+      .form-field legend {
+        color: #211a12;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .form-field label em,
+      .form-field legend em {
+        margin-left: 5px;
+        color: #d3330a;
+        font-size: 9px;
+        font-style: normal;
+      }
+
+      .form-field label > span,
+      .form-field legend > span {
+        margin-left: 5px;
+        color: #81766a;
+        font-size: 9px;
+      }
+
+      .form-field > input {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 14px;
+        border: 1px solid #b7aa99;
+        border-radius: 0;
+        color: #17130e;
+        background: #fffdf8;
+        font: inherit;
+        font-size: 16px;
+      }
+
+      .form-field > input:focus,
+      .form-choice-grid input:focus-visible + span,
+      .consent-field input:focus-visible {
+        outline: 3px solid rgba(215, 167, 57, 0.5);
+        outline-offset: 2px;
+      }
+
+      .form-field > small {
+        color: #6f655a;
+        font-size: 11px;
+      }
+
+      .menu-choice-field {
+        padding: 0;
+        border: 0;
+      }
+
+      .form-choice-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .form-choice-grid label {
+        cursor: pointer;
+      }
+
+      .form-choice-grid input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+      }
+
+      .form-choice-grid span {
+        display: flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 10px;
+        border: 1px solid #b7aa99;
+        color: #40372d;
+        background: #fffdf8;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+        transition:
+          border-color 150ms ease,
+          color 150ms ease,
+          background 150ms ease;
+      }
+
+      .form-choice-grid input:checked + span {
+        border-color: #d83b10;
+        color: #fffaf0;
+        background: #d83b10;
+      }
+
+      .form-trap {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+
+      .consent-field {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        align-items: start;
+        gap: 9px;
+        margin: 4px 0 22px;
+        color: #544a3f;
+        cursor: pointer;
+        font-size: 11px;
+        line-height: 1.65;
+      }
+
+      .consent-field input {
+        width: 18px;
+        height: 18px;
+        margin: 1px 0 0;
+        accent-color: #d83b10;
+      }
+
+      .registration-submit {
+        width: 100%;
+        border: 0;
+        cursor: pointer;
+      }
+
+      .registration-submit:disabled {
+        cursor: not-allowed;
+        filter: grayscale(1);
+        opacity: 0.62;
+      }
+
+      .registration-note {
+        margin: 11px 0 0;
+        color: #6f655a;
+        font-size: 10px;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      .registration-feedback {
+        margin: 0;
+        padding: 12px 14px;
+        border: 1px solid rgba(190, 49, 32, 0.4);
+        background: rgba(190, 49, 32, 0.08);
+        color: #7d2318;
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      .registration-success {
+        align-content: center;
+        min-height: 440px;
+      }
+
+      .registration-success-label {
+        margin: 0 0 12px;
+        color: var(--orange);
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+      }
+
+      .registration-success h3 {
+        margin: 0 0 20px;
+        font-size: clamp(1.55rem, 4vw, 2.25rem);
+        line-height: 1.25;
+      }
+
+      .registration-success > div {
+        color: var(--ink-soft);
+        line-height: 1.8;
+      }
+
+      .registration-success > div a {
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 12px;
+        padding: 14px 20px;
+        background: var(--orange);
+        color: white;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .overview-list dd strong {
+        color: var(--white);
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-size: 22px;
+        line-height: 1.35;
+      }
+
+      .overview-list dd span {
+        margin-top: 4px;
+        color: var(--gold-pale);
+        font-size: 11px;
+        font-weight: 900;
+      }
+
+      .final-cta {
+        position: relative;
+        max-width: 940px;
+        margin-inline: auto;
+        padding: 68px 40px 72px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background:
+          linear-gradient(135deg, rgba(241, 63, 12, 0.11), transparent 58%),
+          var(--ink-card);
+        text-align: center;
+      }
+
+      .final-cta::before,
+      .final-cta::after {
+        position: absolute;
+        content: "";
+        pointer-events: none;
+      }
+
+      .final-cta::before {
+        top: -175px;
+        left: 50%;
+        width: 480px;
+        height: 480px;
+        border: 1px solid rgba(215, 167, 57, 0.2);
+        border-radius: 50%;
+        transform: translateX(-50%);
+      }
+
+      .final-cta::after {
+        right: -90px;
+        bottom: -20px;
+        left: -90px;
+        height: 34px;
+        background: var(--red);
+        transform: rotate(-2deg);
+      }
+
+      .final-cta > * {
+        position: relative;
+        z-index: 2;
+      }
+
+      .final-cta > p {
+        margin-bottom: 12px;
+        color: var(--gold-pale);
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+      }
+
+      .final-cta h2 {
+        margin: 0 0 28px;
+        font-size: clamp(48px, 6.2vw, 76px);
+        line-height: 1.13;
+        letter-spacing: -0.05em;
+      }
+
+      .button-final {
+        min-width: 320px;
+      }
+
+      .site-footer {
+        padding: 31px 0;
+        border-top: 1px solid var(--line-soft);
+        color: #948b80;
+        background: #060605;
+        font-size: 11px;
+      }
+
+      .site-footer .shell {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .site-footer small {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+
+      .mobile-cta {
+        display: none;
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--gold-pale);
+        outline-offset: 4px;
+      }
+
+      @media (max-width: 1080px) {
+        .site-header nav {
+          gap: 17px;
+        }
+
+        .hero-grid {
+          grid-template-columns: minmax(0, 1fr) 385px;
+          gap: 24px;
+        }
+
+        .hero h1 {
+          font-size: clamp(50px, 6vw, 66px);
+        }
+
+        .hero-host-main {
+          right: 66px;
+          width: 280px;
+          height: 440px;
+        }
+
+        .hero-host-top {
+          width: 150px;
+          height: 215px;
+        }
+
+        .hero-host-bottom {
+          width: 158px;
+          height: 220px;
+        }
+
+        .menu-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .menu-card {
+          min-height: 310px;
+        }
+      }
+
+      @media (max-width: 860px) {
+        .shell {
+          width: min(100% - 36px, 720px);
+        }
+
+        .site-header nav {
+          display: none;
+        }
+
+        .header-cta {
+          margin-left: auto;
+        }
+
+        .hero-grid {
+          min-height: auto;
+          grid-template-columns: 1fr;
+          gap: 46px;
+          padding-top: 70px;
+          padding-bottom: 64px;
+        }
+
+        .hero-copy {
+          max-width: 700px;
+        }
+
+        .hero-hosts {
+          min-height: 520px;
+        }
+
+        .hero-host-main {
+          right: 50%;
+          width: 310px;
+          height: 470px;
+          transform: translateX(50%);
+        }
+
+        .hero-host-top {
+          right: 4%;
+          width: 170px;
+          height: 235px;
+        }
+
+        .hero-host-bottom {
+          right: auto;
+          bottom: 0;
+          left: 3%;
+          width: 178px;
+          height: 240px;
+        }
+
+        .hosts-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .host-card {
+          display: grid;
+          grid-template-columns: minmax(230px, 0.82fr) 1.18fr;
+        }
+
+        .host-photo {
+          height: 100%;
+          aspect-ratio: auto;
+          border-right: 1px solid var(--line);
+          border-bottom: 0;
+        }
+
+        .registration-card {
+          grid-template-columns: 1fr;
+        }
+
+        .registration-copy {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+      }
+
+      @media (max-width: 620px) {
+        body {
+          padding-bottom: 70px;
+        }
+
+        .shell {
+          width: calc(100% - 28px);
+        }
+
+        .urgent-inner {
+          width: 100%;
+          min-height: 35px;
+          justify-content: stretch;
+        }
+
+        .urgent-inner strong,
+        .urgent-inner span {
+          flex: 1 1 auto;
+          padding-inline: 4px;
+          font-size: 8px;
+          letter-spacing: 0.03em;
+        }
+
+        .urgent-inner span:nth-of-type(3) {
+          display: none;
+        }
+
+        .header-inner {
+          min-height: 62px;
+        }
+
+        .brand > span:not(.brand-mark) {
+          font-size: 19px;
+        }
+
+        .brand-mark {
+          font-size: 21px;
+        }
+
+        .brand small {
+          font-size: 8px;
+        }
+
+        .header-cta {
+          display: none;
+        }
+
+        .hero-grid {
+          gap: 34px;
+          padding-top: 48px;
+          padding-bottom: 44px;
+        }
+
+        .hero-banner-section {
+          padding: 12px 0 28px;
+        }
+
+        .hero-banner-section .hero-banner-shell {
+          width: 100%;
+        }
+
+        .hero-banner-image {
+          border-right: 0;
+          border-left: 0;
+        }
+
+        .hero-banner-action {
+          padding-inline: 14px;
+        }
+
+        .hero-banner-action .button {
+          min-width: 0;
+        }
+
+        .hero-kicker {
+          margin-bottom: 16px;
+        }
+
+        .hero-kicker span {
+          font-size: 8px;
+          letter-spacing: 0.1em;
+        }
+
+        .hero h1 {
+          margin-bottom: 20px;
+          font-size: clamp(30px, 9.4vw, 45px);
+          line-height: 1.08;
+          letter-spacing: -0.06em;
+        }
+
+        .hero h1 em::after {
+          height: 4px;
+        }
+
+        .hero-lead {
+          margin-bottom: 22px;
+          font-size: 14px;
+          line-height: 1.85;
+        }
+
+        .hero-lead br {
+          display: none;
+        }
+
+        .button {
+          width: 100%;
+          min-height: 56px;
+          padding-inline: 20px;
+        }
+
+        .hero-facts {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          margin-top: 24px;
+        }
+
+        .hero-facts div,
+        .hero-facts div:first-child {
+          padding: 11px 10px;
+          border-bottom: 1px solid var(--line-soft);
+        }
+
+        .hero-facts div:nth-child(2) {
+          border-right: 0;
+        }
+
+        .hero-facts div:nth-child(n + 3) {
+          border-bottom: 0;
+        }
+
+        .hero-facts div:nth-child(3) {
+          padding-left: 0;
+        }
+
+        .hero-hosts {
+          display: grid;
+          min-height: 0;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 7px;
+        }
+
+        .hero-sun {
+          top: 50%;
+          width: 260px;
+          height: 260px;
+        }
+
+        .hero-host,
+        .hero-host-main,
+        .hero-host-top,
+        .hero-host-bottom {
+          position: relative;
+          inset: auto;
+          width: auto;
+          height: auto;
+          aspect-ratio: 3 / 4;
+          transform: none;
+        }
+
+        .hero-host figcaption {
+          padding: 24px 6px 7px;
+          font-size: 9px;
+          line-height: 1.35;
+        }
+
+        .hero-host figcaption small {
+          font-size: 7px;
+        }
+
+        .hero-host-main img,
+        .hero-host-top img,
+        .hero-host-bottom img {
+          object-position: center 20%;
+        }
+
+        .menu-section,
+        .experience-section,
+        .hosts-section,
+        .overview-section {
+          padding-top: 78px;
+          padding-bottom: 84px;
+        }
+
+        .section-heading {
+          margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+          font-size: clamp(34px, 10.5vw, 46px);
+        }
+
+        .section-heading > p:last-child {
+          font-size: 14px;
+        }
+
+        .eyebrow {
+          font-size: 9px;
+        }
+
+        .eyebrow span {
+          width: 24px;
+          height: 24px;
+        }
+
+        .menu-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 8px;
+        }
+
+        .menu-card {
+          min-height: 302px;
+          padding: 16px 14px 18px;
+        }
+
+        .menu-meta {
+          margin-bottom: 20px;
+        }
+
+        .menu-meta span {
+          max-width: 80px;
+          overflow: hidden;
+          font-size: 7px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .menu-meta b {
+          font-size: 20px;
+        }
+
+        .menu-icon {
+          width: 58px;
+          height: 58px;
+          margin-bottom: 18px;
+        }
+
+        .menu-icon svg {
+          width: 35px;
+          height: 35px;
+        }
+
+        .menu-card h3 {
+          margin-bottom: 8px;
+          font-size: 22px;
+          line-height: 1.35;
+        }
+
+        .menu-card > p {
+          font-size: 12px;
+          line-height: 1.7;
+        }
+
+        .choice-note {
+          font-size: 12px;
+        }
+
+        .screen-stage {
+          margin-bottom: 20px;
+          padding: 30px 8px 0;
+        }
+
+        .screen-stage::before {
+          inset: 0 0 10px;
+        }
+
+        .screen-label {
+          padding: 6px 8px;
+          font-size: 8px;
+        }
+
+        .browser-chrome {
+          height: 31px;
+        }
+
+        .browser-chrome span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .steps-grid {
+          grid-template-columns: 1fr;
+          margin-bottom: 24px;
+        }
+
+        .step-card {
+          display: grid;
+          min-height: 0;
+          grid-template-columns: 76px 1fr;
+          column-gap: 15px;
+          padding: 20px 18px;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .step-card:last-child {
+          border-bottom: 0;
+        }
+
+        .step-card:not(:last-child)::after {
+          top: auto;
+          right: 50%;
+          bottom: -10px;
+          width: 19px;
+          height: 19px;
+          transform: translateX(50%) rotate(135deg);
+        }
+
+        .step-head {
+          grid-row: 1 / 3;
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 10px;
+          margin-bottom: 0;
+        }
+
+        .step-head > b {
+          font-size: 42px;
+        }
+
+        .step-icon svg {
+          width: 30px;
+          height: 30px;
+        }
+
+        .step-card h3 {
+          margin-top: 3px;
+          margin-bottom: 5px;
+          font-size: 20px;
+        }
+
+        .step-card p {
+          font-size: 12px;
+        }
+
+        .experience-shell > .button {
+          width: 100%;
+        }
+
+        .hosts-grid {
+          gap: 13px;
+        }
+
+        .host-card {
+          display: block;
+        }
+
+        .host-photo {
+          height: auto;
+          aspect-ratio: 4 / 3.5;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .host-body {
+          padding: 20px 18px 22px;
+        }
+
+        .host-body h3 {
+          display: block;
+          font-size: 24px;
+        }
+
+        .host-body h3 small {
+          display: block;
+          margin-top: 3px;
+        }
+
+        .host-body strong {
+          min-height: 0;
+        }
+
+        .overview-list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          margin-bottom: 48px;
+        }
+
+        .overview-list div {
+          min-height: 122px;
+          padding: 18px 14px;
+        }
+
+        .overview-list dd strong {
+          font-size: 19px;
+        }
+
+        .final-cta {
+          padding: 50px 18px 58px;
+        }
+
+        .registration-card {
+          scroll-margin-top: 86px;
+        }
+
+        .registration-copy {
+          padding: 40px 22px 34px;
+        }
+
+        .registration-copy h2 {
+          font-size: 43px;
+        }
+
+        .registration-copy > p:not(.eyebrow) {
+          margin-bottom: 24px;
+        }
+
+        .registration-form {
+          padding: 32px 18px 28px;
+        }
+
+        .zoom-direct {
+          min-height: 0;
+          padding: 36px 22px 32px;
+        }
+
+        .zoom-direct h3 {
+          font-size: 38px;
+        }
+
+        .archive-notice {
+          grid-template-columns: 1fr;
+          gap: 22px;
+          padding: 28px 22px;
+        }
+
+        .archive-notice h3 {
+          font-size: 24px;
+        }
+
+        .button-newsletter {
+          min-width: 0;
+        }
+
+        .form-choice-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .final-cta > p {
+          font-size: 10px;
+          line-height: 1.7;
+        }
+
+        .final-cta h2 {
+          font-size: clamp(39px, 11.4vw, 50px);
+        }
+
+        .button-final {
+          min-width: 0;
+        }
+
+        .site-footer {
+          padding: 25px 0;
+        }
+
+        .site-footer .shell {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        .mobile-cta {
+          position: fixed;
+          z-index: 50;
+          right: 7px;
+          bottom: 7px;
+          left: 7px;
+          display: flex;
+          min-height: 64px;
+          align-items: center;
+          justify-content: center;
+          gap: 18px;
+          border: 1px solid rgba(255, 250, 240, 0.32);
+          color: var(--white);
+          background: linear-gradient(90deg, #ed3604, var(--red-bright));
+          box-shadow: 0 12px 38px rgba(0, 0, 0, 0.48);
+          font-size: 14px;
+          font-weight: 900;
+          text-decoration: none;
+        }
+
+        .mobile-cta .zoom-button-copy small {
+          font-size: 9px;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .hero h1 {
+          font-size: 9.4vw;
+        }
+
+        .menu-card {
+          min-height: 312px;
+          padding-inline: 12px;
+        }
+
+        .menu-card h3 {
+          font-size: 20px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="urgent-bar">
+      <div class="shell urgent-inner">
+        <strong>7日間限定公開</strong><span>ARCHIVE</span
+        ><span>申込後すぐ視聴</span><span>参加費0円</span
+        ><span>名前・メールのみ</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a
+          class="brand"
+          href="#top"
+          aria-label="アシュラAI体験会アーカイブ トップへ"
+          ><span class="brand-mark" aria-hidden="true">{ }</span
+          ><span>アシュラ</span><small>AI体験会アーカイブ</small></a
+        >
+        <nav aria-label="ページ内メニュー">
+          <a href="#menu">4つのAI制作</a><a href="#experience">体験内容</a
+          ><a href="#hosts">主催者</a
+          ><a href="#archive-registration">アーカイブ申込</a>
+        </nav>
+        <a
+          class="header-cta"
+          href="#archive-registration"
+          aria-label="アーカイブ申込フォームへ移動"
+          ><span class="zoom-button-copy compact"
+            ><small>申込から7日間限定で視聴</small
+            ><b>アーカイブを無料で申し込む</b></span
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6"></path></svg
+        ></a>
+      </div>
+    </header>
+    <main id="top">
+      <section class="hero hero-banner-section" aria-labelledby="hero-title">
+        <div class="shell hero-banner-shell">
+          <h1 id="hero-title" class="sr-only">
+            売上UPにつながる4つのAI制作を実践。アシュラAI体験会7日間限定アーカイブ
+          </h1>
+          <img
+            class="hero-banner-image"
+            src="./hero-banner-v2.webp"
+            alt="無料！アシュラAI体験会。売上UPにつながる4つのAI制作を実践。LP・スライド・漫画・インスタ攻略。高崎さんをメインに、ひろくん・たくみくんが登場するイベントバナー"
+            fetchpriority="high"
+          />
+          <div class="hero-banner-action">
+            <a
+              class="button button-primary"
+              href="#archive-registration"
+              aria-label="アーカイブ申込フォームへ移動"
+              ><span class="zoom-button-copy"
+                ><small>申込から7日間限定で視聴</small
+                ><b>アーカイブを無料で申し込む</b></span
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"></path></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="menu" class="menu-section">
+        <div class="shell">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow"><span>01</span> REVENUE-FOCUSED AI CREATION</p>
+            <h2>売上UPにつながる<br /><em>4つのAI制作。</em></h2>
+            <p>集客・提案・販売の現場で使う制作物を、最新AIで実践します。</p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-meta"><span>LANDING PAGE</span><b>01</b></div>
+              <div class="menu-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="8" y="7" width="32" height="34" rx="3"></rect>
+                  <path d="M14 15h20M14 22h13M14 29h20"></path>
+                  <rect x="14" y="34" width="12" height="3" rx="1"></rect>
+                </svg>
+              </div>
+              <h3>売上につなげるLP</h3>
+              <p>商品・サービスの魅力を整理し、申込・購入へつなぐLPを制作。</p>
+            </article>
+            <article class="menu-card">
+              <div class="menu-meta"><span>BUSINESS MANGA</span><b>02</b></div>
+              <div class="menu-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="6" y="7" width="36" height="34" rx="3"></rect>
+                  <path d="M24 7v34M6 24h36M14 15h4M31 31h4"></path>
+                </svg>
+              </div>
+              <h3>伝わるビジネス漫画</h3>
+              <p>難しい価値や商品の物語を、読み進めたくなる漫画に。</p>
+            </article>
+            <article class="menu-card">
+              <div class="menu-meta"><span>INSTAGRAM</span><b>03</b></div>
+              <div class="menu-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="8" y="8" width="32" height="32" rx="8"></rect>
+                  <circle cx="24" cy="24" r="8"></circle>
+                  <circle cx="34" cy="14" r="1.5" class="fill"></circle>
+                </svg>
+              </div>
+              <h3>集客インスタ投稿</h3>
+              <p>告知・集客で目を止めてもらうInstagram投稿画像に。</p>
+            </article>
+            <article class="menu-card">
+              <div class="menu-meta"><span>PRESENTATION</span><b>04</b></div>
+              <div class="menu-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="6" y="8" width="36" height="26" rx="3"></rect>
+                  <path d="M24 34v8M16 42h16M13 27l7-7 5 4 9-10"></path>
+                </svg>
+              </div>
+              <h3>提案スライド</h3>
+              <p>提案・説明・講座を、相手が理解し動けるスライドに。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience-section">
+        <div class="shell experience-shell">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow"><span>02</span> HANDS-ON SESSION</p>
+            <h2>最新AIを使って、<br /><em>その場で実際につくる。</em></h2>
+            <p>
+              見るだけの説明会ではありません。自分の商品・サービスを題材に、売上へつなげる制作を実践します。
+            </p>
+          </div>
+          <div class="steps-grid" aria-label="体験の3ステップ">
+            <article class="step-card">
+              <div class="step-head">
+                <b>1</b>
+                <div class="step-icon">
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <rect x="5" y="8" width="16" height="28" rx="3"></rect>
+                    <rect x="27" y="8" width="16" height="28" rx="3"></rect>
+                    <path d="m15 26 5 5 9-12"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3>題材を決める</h3>
+              <p>売上につなげたい商品・サービスと、届けたい相手を決めます。</p>
+            </article>
+            <article class="step-card">
+              <div class="step-head">
+                <b>2</b>
+                <div class="step-icon">
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M8 38h32V18H26l-5-6H8z"></path>
+                    <path d="M24 35V23M19 28l5-5 5 5"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3>素材を入れる</h3>
+              <p>
+                商品・サービス、届けたい相手、伝えたい価値など、自分の材料を入力します。
+              </p>
+            </article>
+            <article class="step-card">
+              <div class="step-head">
+                <b>3</b>
+                <div class="step-icon">
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path
+                      d="m9 39 21-21M27 9l3-6 3 6 6 3-6 3-3 6-3-6-6-3zM32 30l2-4 2 4 4 2-4 2-2 4-2-4-4-2z"
+                    ></path>
+                    <path d="m7 41 7-2-5-5z"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3>生成する</h3>
+              <p>最新AIの制作工程を動かし、仕事で使える制作物へ整えます。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="hosts" class="hosts-section">
+        <div class="shell">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow"><span>03</span> HOSTS</p>
+            <h2>主催者</h2>
+            <p>アシュラ開発を担う高崎さんを中心に、3人で体験を支えます。</p>
+          </div>
+          <div class="hosts-grid">
+            <article class="host-card host-card-featured">
+              <div class="host-photo">
+                <img src="./takasakisan.webp" alt="髙崎 翔太（高崎さん）" /><b
+                  class="host-featured-label"
+                  >MAIN HOST</b
+                >
+              </div>
+              <div class="host-body">
+                <span>SHOTA TAKASAKI</span>
+                <h3>
+                  髙崎 翔太<small>（<!-- -->高崎さん<!-- -->）</small>
+                </h3>
+                <strong>if(塾)塾頭／起業家・AI開発実践者</strong>
+                <p>
+                  独自のワークフロービルダーを開発し、Claude
+                  Codeなどで実務ツールを構築。アシュラの開発・技術を担当。
+                </p>
+              </div>
+            </article>
+            <article class="host-card">
+              <div class="host-photo">
+                <img src="./hirokun.webp" alt="田中 啓之（ひろくん）" />
+              </div>
+              <div class="host-body">
+                <span>HIROYUKI TANAKA</span>
+                <h3>
+                  田中 啓之<small>（<!-- -->ひろくん<!-- -->）</small>
+                </h3>
+                <strong>三方よしAI共創コンサルタント／GPTs研究会創設者</strong>
+                <p>
+                  AI氣道、Claude
+                  Code、AIエージェントの実践会を主催。難しいAIを、商売の現場で使える形へ翻訳してきた。
+                </p>
+              </div>
+            </article>
+            <article class="host-card">
+              <div class="host-photo">
+                <img src="./takumikun.webp" alt="山﨑 琢己（たくみくん）" />
+              </div>
+              <div class="host-body">
+                <span>TAKUMI YAMAZAKI</span>
+                <h3>
+                  山﨑 琢己<small>（<!-- -->たくみくん<!-- -->）</small>
+                </h3>
+                <strong>if(塾)塾長／NPO法人if(AI)理事</strong>
+                <p>
+                  AI
+                  API接続やダッシュボード構築、教育とAIの実践を担う。参加者の制作工程と操作を支える。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="overview" class="overview-section">
+        <div class="shell">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow"><span>04</span> EVENT INFO</p>
+            <h2>開催概要</h2>
+          </div>
+          <dl class="overview-list">
+            <div>
+              <dt>開催日</dt>
+              <dd><strong>2026年8月17日</strong><span>月曜日</span></dd>
+            </div>
+            <div>
+              <dt>開始時間</dt>
+              <dd><strong>15:00〜</strong></dd>
+            </div>
+            <div>
+              <dt>開催形式</dt>
+              <dd><strong>オンライン</strong></dd>
+            </div>
+            <div>
+              <dt>参加費</dt>
+              <dd><strong>0円</strong></dd>
+            </div>
+          </dl>
+          <div id="registration" class="registration-card">
+            <div class="registration-copy">
+              <p class="eyebrow"><span>05</span> FREE ARCHIVE</p>
+              <h2>7日間限定<br />アーカイブ申込</h2>
+              <p>
+                名前とメールアドレスだけで、約2時間17分の体験会をすぐに視聴できます。
+              </p>
+              <ul>
+                <li><b>1</b><span>参加費0円</span></li>
+                <li><b>2</b><span>申込後すぐ視聴</span></li>
+                <li><b>3</b><span>申込から7日間限定</span></li>
+              </ul>
+            </div>
+            <div class="zoom-direct">
+              <p class="zoom-direct-label">ARCHIVE ENTRY</p>
+              <h3>お名前・メールアドレスを<br />入力してください</h3>
+              <p>
+                送信後、視聴ページへ移動します。視聴URLはメールでもお送りします。
+              </p>
+              <a
+                class="button button-primary"
+                href="#archive-registration"
+                aria-label="アーカイブ申込フォームへ移動"
+                ><span class="zoom-button-copy"
+                  ><small>入力は約30秒</small
+                  ><b>無料でアーカイブを受け取る</b></span
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6"></path></svg></a
+              ><small
+                >JavaScriptを有効にすると入力フォームが表示されます。</small
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell">
+        <span>アシュラ｜最新AI実践体験会</span
+        ><small>7 DAYS LIMITED ARCHIVE · FREE ENTRY</small>
+      </div>
+    </footer>
+    <a
+      class="mobile-cta"
+      href="#archive-registration"
+      aria-label="アーカイブ申込フォームへ移動"
+      ><span class="zoom-button-copy compact"
+        ><small>申込から7日間限定で視聴</small
+        ><b>アーカイブを無料で申し込む</b></span
+      ><svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 12h14M13 6l6 6-6 6"></path></svg
+    ></a>
+  </body>
+  <style>
+    .archive-registration-card {
+      display: block;
+      width: min(860px, 100%);
+      margin-inline: auto;
+      scroll-margin-top: 110px;
+      border-color: rgba(242, 211, 141, 0.3);
+      background: #11100e;
+    }
+
+    .archive-registration-card .registration-copy {
+      min-height: 0;
+      padding: 56px 64px 34px;
+      background: transparent;
+      text-align: center;
+    }
+
+    .archive-registration-card .registration-copy::after {
+      display: none;
+    }
+
+    .archive-registration-card .registration-copy h2 {
+      max-width: 660px;
+      margin-inline: auto;
+      font-size: clamp(40px, 6vw, 62px);
+      line-height: 1.15;
+      text-wrap: balance;
+    }
+
+    .archive-registration-card .registration-copy > p:not(.eyebrow) {
+      max-width: 620px;
+      margin-inline: auto;
+      text-wrap: pretty;
+    }
+
+    .archive-registration-card .registration-copy ul {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      max-width: 650px;
+      margin: 28px auto 0;
+      padding: 0;
+    }
+
+    .archive-registration-card .registration-copy li {
+      display: grid;
+      min-height: 92px;
+      place-content: center;
+      gap: 7px;
+      padding: 14px 10px;
+      border: 1px solid rgba(255, 250, 240, 0.14);
+    }
+
+    .archive-registration-card .registration-copy li b {
+      margin: 0 auto;
+    }
+
+    .archive-form-panel {
+      min-width: 0;
+      padding: 0 64px 56px;
+      border: 0;
+      background: transparent;
+    }
+
+    .archive-form-panel h3 {
+      max-width: 620px;
+      margin-inline: auto;
+      margin-bottom: 10px;
+      font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+      font-size: clamp(25px, 3vw, 32px);
+      line-height: 1.35;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    .archive-form-panel > p {
+      max-width: 590px;
+      margin-inline: auto;
+      margin-bottom: 22px;
+      color: #c7bfb2;
+      font-size: 14px;
+      text-align: center;
+      text-wrap: pretty;
+    }
+
+    .archive-form-frame {
+      display: block;
+      width: 100%;
+      min-height: 520px;
+      border: 0;
+      background: #11100e;
+    }
+
+    .archive-form-frame.is-complete {
+      min-height: 1760px;
+    }
+
+    .archive-registration-card.is-complete {
+      width: min(1060px, 100%);
+      border: 0;
+      background: transparent;
+    }
+
+    .archive-registration-card.is-complete .registration-copy,
+    .archive-registration-card.is-complete .archive-form-panel > p,
+    .archive-registration-card.is-complete .archive-form-panel > h3,
+    .archive-registration-card.is-complete
+      .archive-form-panel
+      > .zoom-direct-label,
+    .archive-registration-card.is-complete .archive-form-note {
+      display: none;
+    }
+
+    .archive-registration-card.is-complete .archive-form-panel {
+      padding: 0;
+    }
+
+    .archive-preview-form {
+      display: grid;
+      gap: 18px;
+      max-width: 590px;
+      margin-inline: auto;
+    }
+
+    .archive-preview-form label {
+      display: grid;
+      gap: 7px;
+      color: #fffaf0;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .archive-preview-form input {
+      width: 100%;
+      min-height: 54px;
+      padding: 12px 14px;
+      border: 1px solid rgba(255, 250, 240, 0.28);
+      border-radius: 4px;
+      color: #080807;
+      background: #fff;
+      font: inherit;
+    }
+
+    .archive-preview-form .button {
+      width: 100%;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .archive-form-note {
+      margin: 16px 0 0;
+      color: #a9a095;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .centered-heading h2 {
+        font-size: clamp(34px, 10vw, 42px);
+      }
+
+      .archive-registration-card .registration-copy {
+        padding: 38px 22px 26px;
+      }
+
+      .archive-registration-card .registration-copy h2 {
+        font-size: clamp(36px, 12vw, 48px);
+      }
+
+      .archive-registration-card .registration-copy ul {
+        grid-template-columns: 1fr;
+      }
+
+      .archive-registration-card .registration-copy li {
+        min-height: 64px;
+      }
+
+      .archive-form-panel {
+        padding: 0 20px 38px;
+      }
+
+      .archive-form-frame {
+        min-height: 560px;
+      }
+
+      .archive-form-frame.is-complete {
+        min-height: 2400px;
+      }
+    }
+  </style>
+  <script>
+    (() => {
+      const utageFormUrl = "https://utage-system.com/p/w8O7nKrbaFfE";
+      const isPreview = utageFormUrl.startsWith("__");
+
+      document.title = "【7日間限定】アシュラAI実践体験会｜無料アーカイブ";
+
+      const urgentItems = document.querySelectorAll(".urgent-inner > *");
+      const urgentCopy = [
+        "7日間限定公開",
+        "ARCHIVE",
+        "申込後すぐ視聴",
+        "参加費0円",
+        "名前・メールのみ",
+      ];
+      urgentItems.forEach((item, index) => {
+        if (urgentCopy[index]) item.textContent = urgentCopy[index];
+      });
+
+      const brandSmall = document.querySelector(".brand small");
+      if (brandSmall) brandSmall.textContent = "AI体験会アーカイブ";
+
+      const heroTitle = document.querySelector("#hero-title");
+      if (heroTitle)
+        heroTitle.textContent =
+          "売上UPにつながる4つのAI制作を実践。アシュラAI体験会7日間限定アーカイブ";
+
+      const navOverview = document.querySelector('nav a[href="#overview"]');
+      if (navOverview) {
+        navOverview.href = "#archive-registration";
+        navOverview.textContent = "アーカイブ申込";
+      }
+
+      const registration = document.querySelector("#registration");
+      if (registration) {
+        registration.id = "archive-registration";
+        registration.classList.add("archive-registration-card");
+        registration.innerHTML = `
+        <div class="registration-copy">
+          <p class="eyebrow"><span>05</span> FREE ARCHIVE</p>
+          <h2>7日間限定<br>アーカイブ申込</h2>
+          <p>名前とメールアドレスだけで、約2時間17分の体験会をすぐに視聴できます。</p>
+          <ul>
+            <li><b>1</b><span>参加費0円</span></li>
+            <li><b>2</b><span>申込後すぐ視聴</span></li>
+            <li><b>3</b><span>申込から7日間限定</span></li>
+          </ul>
+        </div>
+        <div class="archive-form-panel">
+          <p class="zoom-direct-label">ARCHIVE ENTRY</p>
+          <h3>お名前・メールアドレスを<br>入力してください</h3>
+          <p>送信後、視聴ページへ移動します。視聴URLはメールでもお送りします。</p>
+          <div id="archive-form-host"></div>
+          <p class="archive-form-note">入力情報はアーカイブのご案内と関連情報の配信に使用します。</p>
+        </div>`;
+
+        const host = document.querySelector("#archive-form-host");
+        if (isPreview) {
+          host.innerHTML = `
+          <form class="archive-preview-form" id="archive-preview-form">
+            <label>お名前（必須）<input name="name" autocomplete="name" required placeholder="山田 太郎"></label>
+            <label>メールアドレス（必須）<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+            <button class="button button-primary" type="submit"><span class="zoom-button-copy"><small>入力は約30秒</small><b>無料でアーカイブを受け取る</b></span></button>
+          </form>`;
+          host.querySelector("form").addEventListener("submit", (event) => {
+            event.preventDefault();
+            registration.classList.add("is-complete");
+            host.innerHTML =
+              '<iframe class="archive-form-frame is-complete" title="アシュラAI体験会 アーカイブ視聴ページ" src="./utage/archive-page.html"></iframe>';
+            host.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        } else {
+          const iframe = document.createElement("iframe");
+          iframe.className = "archive-form-frame";
+          iframe.title = "アシュラAI体験会 アーカイブ申込フォーム";
+          iframe.src = utageFormUrl;
+          iframe.loading = "lazy";
+          let frameLoads = 0;
+          iframe.addEventListener("load", () => {
+            frameLoads += 1;
+            if (frameLoads > 1) {
+              iframe.classList.add("is-complete");
+              registration.classList.add("is-complete");
+              registration.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+          host.appendChild(iframe);
+        }
+      }
+
+      document.querySelector(".archive-notice")?.remove();
+
+      const footerSmall = document.querySelector(".site-footer small");
+      if (footerSmall)
+        footerSmall.textContent = "7 DAYS LIMITED ARCHIVE · FREE ENTRY";
+    })();
+  </script>
 </html>
